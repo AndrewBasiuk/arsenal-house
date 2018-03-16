@@ -1,0 +1,21 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 0.75rem;
+    color: #fff;
+    line-height: 1.25rem;
+    letter-spacing: 0.6px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}

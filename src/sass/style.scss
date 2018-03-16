@@ -1,26 +1,5 @@
 @import 'vars';
 @import 'mixins';
 @import 'reset';
-@import 'main/_main';
-
-.hero {
-  display: flex;
-}
-.left {
-  width: 50%;
-  height: 80vh;
-  background-color: red;
-}
-.right {
-  width: 50%;
-  height: 80vh;
-  background-color: blue;
-}
-.letter_a {
-  width: 200px;
-  height: 80vh;
-  background-color: green;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
+@import 'common/common';
+@import 'main/main';
