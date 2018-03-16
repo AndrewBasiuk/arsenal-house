@@ -37,8 +37,9 @@ gulp.task('js', ['common-js'], function() {
 
 gulp.task('browser-sync', function() {
 	browserSync({
-		proxy: "http://localhost:80/arsenal-house/",
-    notify: false // Отключаем уведомления
+		//proxy: "http://localhost:80/arsenalhouse/dist",
+		proxy: "arsenalhouse/dist",
+    	notify: false // Отключаем уведомления
 	});
 });
 
