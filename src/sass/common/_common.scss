@@ -1,7 +1,19 @@
+@include font-face("CoreSans", "../fonts/CoreSans/CoreSansRegular");
+@include font-face("CoreSans", "../fonts/CoreSans/CoreSansLight", 300);
+@include font-face("CoreSans", "../fonts/CoreSans/CoreSansLightItalic", 300, "italic");
+@include font-face("CoreSans", "../fonts/CoreSans/CoreSansThin", 100);
+@include font-face("Annabelle", "../fonts/Annabelle/Annabelle");
+@include font-face("Cormorant", "../fonts/Cormorant/CormorantRegular");
+@include font-face("Cormorant", "../fonts/Cormorant/CormorantSemiBold", 600);
+
 * {
     margin:0;
     padding:0;
     box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
 }
 
 body {
@@ -9,6 +21,7 @@ body {
     color: #fff;
     line-height: 1.25rem;
     letter-spacing: 0.6px;
+    font-family: "CoreSans", sans-serif;
 }
 
 a {
@@ -19,3 +32,4 @@ a {
     max-width: 1200px;
     margin: 0 auto;
 }
+

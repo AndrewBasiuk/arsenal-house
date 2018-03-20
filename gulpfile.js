@@ -27,11 +27,11 @@ gulp.task('common-js', function() {
 gulp.task('js', ['common-js'], function() {
 	return gulp.src([
 		'src/js/libs/jquery.min.js',
-		'src/js/common.js', // Всегда в конце
+		'src/js/main.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.js'))
 	// .pipe(uglify()) // Минимизировать весь js (на выбор)
-	.pipe(gulp.dest('src/js'))
+	.pipe(gulp.dest('dist/js'))
 	.pipe(browserSync.reload({stream: true}));
 });
 

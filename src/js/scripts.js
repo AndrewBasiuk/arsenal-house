@@ -1,4 +1,5 @@
 (function() {
+
     function drags(dragElement, resizeElement, container) {
 	
         // Initialize the dragging event on mousedown.

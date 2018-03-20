@@ -36,9 +36,9 @@
                             <div class="nav__icon nav__mail_icon"></div>
                         </a>
                     </li>
-                    <li class="nav__item"><a href="#">Main</a></li>
-                    <li class="nav__item"><a href="#">About Complex</a></li>
-                    <li class="nav__item"><a href="#">Choose appartment</a></li>
+                    <li class="nav__item nav__item_desk"><a href="#">Головна</a></li>
+                    <li class="nav__item nav__item_desk"><a href="#">Про комплекс</a></li>
+                    <li class="nav__item nav__item_desk"><a href="#">Обрати кваритру</a></li>
                 </ul>
                 <div class="nav__item nav__logo-container">
                     <a href="#">
@@ -46,9 +46,9 @@
                     </a>
                 </div>
                 <ul class="nav__right">
-                    <li class="nav__item"><a href="#">Infrastructure</a></li>
-                    <li class="nav__item"><a href="#">News</a></li>
-                    <li class="nav__item"><a href="#">Contacts</a></li>
+                    <li class="nav__item nav__item_desk"><a href="#">Інфраструктура</a></li>
+                    <li class="nav__item nav__item_desk"><a href="#">Новини</a></li>
+                    <li class="nav__item nav__item_desk"><a href="#">Контакти</a></li>
                     <li class="nav__item">
                         <a href="#">
                             <div class="nav__icon nav__map_icon"></div>
@@ -62,11 +62,12 @@
                         </ul>
                         <div class="nav__icon nav__arrow_icon"></div>
                     </li>
-                    <li class="nav__item nav__callback-btn"><a href="#">Callback</a></li>
+                    <li class="nav__item nav__callback-btn"><a href="#">Зворотній дзвінок</a></li>
                 </ul>
             </div>
         </nav>
     </header>
+
     <section class="hero">
         <div class="hero__image-wrapper">
             <div class="hero__image hero__image-left"></div>
@@ -87,15 +88,18 @@
             </div>
         </div>
     </section>
+
     <section class="building">
         <div class="building__inner wrapper">
-            <div class="bulding__text-block section__text-block">
-                <div class="section__text-block_inner">
-                    <h3 class="section__text-block-heading">The Building</h3>
-                    <p class="section__text-block-paragraph">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, 
-                        стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар...
-                    </p>
-                    <a href="#" class="section__text-block_btn btn">Детальніше</a>
+            <div class="section__text-block_outer bulding__text-block">
+                <div class="section__text-block">
+                    <div class="section__text-block_inner">
+                        <h3 class="section__text-block-heading">The Building</h3>
+                        <p class="section__text-block-paragraph">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, 
+                            стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар...
+                        </p>
+                        <a href="#" class="section__text-block_btn btn">Детальніше</a>
+                    </div>
                 </div>
             </div>
             <div class="building__next-view">
@@ -105,25 +109,36 @@
             </div>
         </div>
     </section>
+
     <section class="apartments">
         <div class="apartments__inner wrapper">
-            <div class="apartments__text-block section__text-block">
-                <div class="section__text-block_inner">
-                    <h3 class="section__text-block-heading">Apartments</h3>
-                    <p class="section__text-block-paragraph">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, 
-                        стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар...
-                    </p>
-                    <a href="#" class="section__text-block_btn btn">Перейти до вибору</a>
+            <div class="section__text-block_outer apartments__text-block">
+                <div class="section__text-block">
+                    <div class="section__text-block_inner">
+                        <h3 class="section__text-block-heading">Apartments</h3>
+                        <p class="section__text-block-paragraph">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, 
+                            стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар...
+                        </p>
+                        <a href="#" class="section__text-block_btn btn">Детальніше</a>
+                    </div>
                 </div>
             </div>
-            <div class="apartments__next-view">
+            <div class="building__next-view">
                 <div class="next-view next-view_brown">
                     <a href="#">Наступна <span class="next-view__icon next-view__icon_brown"></span>сторiнка</a>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="infrastructure">
+        <div class="ba-slider">
+            <img src="img/main/infrastructure_paint.jpg" alt="Slider paint image">
+            <div class="resize">
+                <img src="img/main/infrastructure.jpg" alt="Slider image">
+            </div>
+            <span class="handle"></span>
+        </div>
         <div class="infrastructure__inner wrapper">
             <div class="infrastructure__text-block section__text-block">
                 <div class="section__text-block_inner">
@@ -131,7 +146,9 @@
                     <p class="section__text-block-paragraph">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, 
                         стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар...
                     </p>
-                    <a href="#" class="section__text-block_btn btn">Детальніше</a>
+                    <div class="section__text-block_btn-container">
+                        <a href="#" class="section__text-block_btn btn">Детальніше</a>
+                    </div>
                 </div>
             </div>
             <div class="infrastructure__next-view">
@@ -141,6 +158,7 @@
             </div>
         </div>
     </section>
+
     <section class="quote">
         <div class="quote__quote-text quote__text">
             <h3 class="quote__text_heading">У тебе є вороги? Добре. Це означає, що в своєму житті ти щось відстоював.</h3>
@@ -154,6 +172,7 @@
             </div>
         </div>
     </section>
+
     <section class="gallery">
         <div>
             <ul class="vertical-gallery" id="vertical-gallery">
@@ -203,7 +222,7 @@
                             друкарстві та дизайні. Lorem Ipsum є, фактично, 
                             стандартною "рибою"...
                         </p>
-                        <a href="#" class="section__text-block_btn btn">Детальніше</a>
+                        <a href="#" class="section__text-block_btn news__btn btn">Детальніше</a>
                     </div>
                 </div>
             </div>
@@ -216,7 +235,7 @@
                             друкарстві та дизайні. Lorem Ipsum є, фактично, 
                             стандартною "рибою"...
                         </p>
-                        <a href="#" class="section__text-block_btn btn">Детальніше</a>
+                        <a href="#" class="section__text-block_btn news__btn btn">Детальніше</a>
                     </div>
                 </div>
             </div>
@@ -224,27 +243,27 @@
 
         </div>
     </section>
-    <section class="location">
-        <div class="location__wrapper">
-            <h3 class="location__heading">
-                Location
+    <section class="contacts">
+        <div class="contacts__wrapper">
+            <h3 class="contacts__heading">
+                Contacts
             </h3>
             <div class="contacts__info">
                 <ul>
-                    <li><span class="contacts__icon contacts__icon_main"></span><a href="#">Arsenalhouse@com.ua</a></li>
+                    <li><span class="contacts__icon contacts__icon_mail"></span><a href="#">Arsenalhouse@com.ua</a></li>
                     <li><span class="contacts__icon contacts__icon_webcam"></span><a href="#">Веб -камера</a></li>
                     <li><span class="contacts__icon contacts__icon_address"></span><a href="#">вул. Арсенальна 45</a></li>
                     <li><span class="contacts__icon contacts__icon_phone"></span><a href="#">(044) 45-45-123</a></li>
 
                 </ul>
             </div>
-            <p class="location__paragraph">
+            <p class="contacts__paragraph">
                 Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки. Сенс використання 
                 Lorem Ipsum полягає в тому, що цей текст має більш-менш нормальне розподілення літер на відміну від, наприклад, "Тут іде текст. 
                 Тут іде текст." Це робить текст схожим на оповідний.
             </p>
-            <div class="location__form_outer">
-                <div class="location__form_inner">
+            <div class="contacts__form_outer">
+                <div class="contacts__form_inner">
                     <form action="">
                         <div>
                             <div class="form__inputs form__inputs_top">
@@ -272,6 +291,16 @@
             </div>
         </div>
     </section>
+    <footer class="footer">
+        <div class="wrapper footer__wraper">
+            <div class="copyright">
+                &#169; Усі права захищено. Арсенал
+            </div>
+            <div class="amrtOrange">
+                <a href="http://smartorange.com.ua/" target="_blank"><img src="img/common/logo-smart-orange.png" alt="Smart Orange Logo"></a>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
     <script src="js/scripts.js"></script>
     <script>
