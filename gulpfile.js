@@ -26,8 +26,9 @@ gulp.task('common-js', function() {
 
 gulp.task('js', ['common-js'], function() {
 	return gulp.src([
-		'src/js/libs/jquery.min.js',
-		'src/js/main.js', // Всегда в конце
+		'src/js/libs/slick.min.js',
+		'src/js/main.js',
+		'src/js/common.js'
 		])
 	.pipe(concat('scripts.js'))
 	// .pipe(uglify()) // Минимизировать весь js (на выбор)

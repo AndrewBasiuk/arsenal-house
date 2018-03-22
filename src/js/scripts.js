@@ -1,3 +1,24 @@
+// Returns a function, that, as long as it continues to be invoked, will not
+// be triggered. The function will be called after it stops being called for
+// N milliseconds. If `immediate` is passed, trigger the function on the
+// leading edge, instead of the trailing.
+function debounce(func, wait, immediate) {
+	var timeout;
+	return function() {
+		var context = this, args = arguments;
+		var later = function() {
+			timeout = null;
+			if (!immediate) func.apply(context, args);
+		};
+		var callNow = immediate && !timeout;
+		clearTimeout(timeout);
+		timeout = setTimeout(later, wait);
+		if (callNow) func.apply(context, args);
+	};
+};
+// end debounce
+
+// Before/After main page slider start
 (function() {
 
     function drags(dragElement, resizeElement, container) {
@@ -79,3 +100,34 @@
       });
 
 })();
+// Before/After main page slider end
+
+// Main page scroll listener and frames add animation start
+var animateHTMLCtrl = (function () {
+  var elems, windowHeight;
+  var init = function () {
+    elems = document.getElementsByClassName('hidden__frame')
+    windowHeight = window.innerHeight;
+    _addEventHandlers();
+    _checkPosition();
+  };
+  function _addEventHandlers() {
+    window.addEventListener('scroll', debounce(_checkPosition, 100));
+    window.addEventListener('resize', debounce(init, 100));
+  };
+  function _checkPosition() {
+    for (var i = 0; i < elems.length; i++) {
+      var posFromTop = elems[i].getBoundingClientRect().top;
+      if (posFromTop - windowHeight <= 0) {
+        elems[i].className = elems[i].className.replace('hidden__frame', 'fade-in__frame')
+      }
+    }
+  }
+
+  return {
+    init: init
+  }
+})();
+// end animateHTMLCtrl
+animateHTMLCtrl.init()
+// Main page scroll listener and frames add animation start

@@ -20,9 +20,33 @@
 
 @media only screen and (max-width: 768px) {
     .nav__left {
-        width: 35%;
+        width: 40%;
     }
     .nav__right {
-        width: 35%;
+        width: 40%;
     }
 } //media 768px end 
+
+@media only screen and (max-width: 660px) {
+    .nav__left {
+        width: 30%;
+    }
+    .nav__right {
+        width: 30%;
+    }
+    .language-select {
+        display: none;
+    }
+    .nav__icon_desktop {
+        display: none;
+    }
+    .nav__callback-btn {
+        display: none;
+    }
+    .nav__icon_mobile {
+        display: block;
+    }
+    .nav__callback-btn_mobile {
+        display: block;
+    }
+}//media 660px end 

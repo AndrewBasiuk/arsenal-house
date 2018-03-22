@@ -23,7 +23,17 @@
       color: $main-color;
     }
   }
-  
+
+  .nav__item_desk {
+    a { 
+      color: $secondary-color;
+      transition: color 0.3s;
+      &:hover {
+        color: $main-color;
+      }
+    }
+  }
+
   .nav__menu-btn {
     min-width: 80px;
     display: flex;
@@ -96,5 +106,16 @@
       padding: 14px 17px 13px 15px;
       border: 1px solid $secondary-color;
     }
+  }
+  .nav__callback-btn_mobile {
+    display: none;
+  }
+  .nav__icon_mobile {
+    display: none;
+  }
+  .nav__phone_icon {
+    width: 20px;
+    height: 20px;
+    background-position: -52px 0;
   }
   // Navbar end
