@@ -9,8 +9,17 @@
   z-index: 2;
   background-color: black;
 }
+.preloader__cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  background-color: black;
+}
 .preloader__svg-container {
-  width: 800px;
+  max-width: 300px;
   position: relative;
   top: 50%;
   left: 50%;
@@ -89,7 +98,7 @@
   transform: translate(-50%);
   .next-view__icon {
     display: inline-block;
-    width: 22px;
+    width: 27px;
     height: 25px;
     background-image: url('../img/main/main_page_icons_spritesheet.png');
     background-repeat: no-repeat;
@@ -117,14 +126,24 @@
 // Hero end
 
 // Building start
-.building {
-  height: 100vh;
-  width: 100%;
+.building__canvas {
+  display: block;
+  margin: 0 auto;
   background-image: url('../img/main/the_building.jpg');
+  background-size: cover;
+  width: 100%;
+  max-width: 1800px;
+  height: auto;
+}
+.building {
+  //height: 100vh;
+  width: 100%;
+  //background-image: url('../img/main/the_building.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  background-color: $black-color;
 }
 .bulding__text-block {
   position: absolute;
@@ -221,7 +240,6 @@
 // Infrastructure start
 .infrastructure {
   position: relative;
-  height: 100vh;
   width: 100%;
 }
 
@@ -414,16 +432,19 @@
         border: 10px solid $main-color;
         width: 100px !important;
       }
+      &:hover {
+        cursor: pointer;
+      }
     }
     
-    .thumb_1 {background-image: url('../img/main/gallery/1.jpg')}
-    .thumb_2 {background-image: url('../img/main/gallery/2.jpg')}
-    .thumb_3 {background-image: url('../img/main/gallery/3.jpg')}
-    .thumb_4 {background-image: url('../img/main/gallery/4.jpg')}
-    .thumb_5 {background-image: url('../img/main/gallery/5.jpg')}
-    .thumb_6 {background-image: url('../img/main/gallery/6.jpg')}
-    .thumb_7 {background-image: url('../img/main/gallery/7.jpg')}
-    .thumb_8 {background-image: url('../img/main/gallery/8.jpg')}
+    .thumb_1 {background-image: url('../img/main/gallery/thumb/1.jpg')}
+    .thumb_2 {background-image: url('../img/main/gallery/thumb/2.jpg')}
+    .thumb_3 {background-image: url('../img/main/gallery/thumb/3.jpg')}
+    .thumb_4 {background-image: url('../img/main/gallery/thumb/4.jpg')}
+    .thumb_5 {background-image: url('../img/main/gallery/thumb/5.jpg')}
+    .thumb_6 {background-image: url('../img/main/gallery/thumb/6.jpg')}
+    .thumb_7 {background-image: url('../img/main/gallery/thumb/7.jpg')}
+    .thumb_8 {background-image: url('../img/main/gallery/thumb/8.jpg')}
 }
 
 .gallery__items {
@@ -453,7 +474,7 @@
 .gallery__text-block {
   position: absolute;
   top: 50%;
-  right: 0%;
+  right: 5%;
   transform: translateY(-50%);
   z-index: 1;
   background-color: transparent;
@@ -680,6 +701,12 @@
     background-color: $secondary-color;
     border-top: 1px solid $main-color;
     border-bottom: 1px solid $main-color;
+    transition: all 0.3s;
+    &:hover {
+      color: lighten($main-color, 10%);
+      background-color: lighten($secondary-color, 10%);
+      cursor: pointer;
+    }
   }
 }
 .textarea::-webkit-input-placeholder,
