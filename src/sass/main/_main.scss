@@ -136,61 +136,63 @@
   height: auto;
 }
 .building {
-  //height: 100vh;
   width: 100%;
-  //background-image: url('../img/main/the_building.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
   background-color: $black-color;
 }
-.bulding__text-block {
+.section__box_buiding {
   position: absolute;
-  top: 50%;
-  right: 5%;
-  transform: translateY(-50%);
+  top: 20px;
+  right: 100px;
 }
-.section__text-block_outer {
-  border: 1px solid $black-color;
-  padding: 3px;
-  display: inline-block;
-}
-.section__text-block {
-  max-width: 360px;
-  height: 360px;
+.section__box_outer {
   position: relative;
-  background-color: rgba(0,0,0,0.75);
-  &:after {
-    content: "";
+  &::before,
+  &::after {
+    content: '';
     position: absolute;
-    top:0;
-    right: 0;
-    border-bottom: 358px solid rgba(0,0,0,0.25);
-    border-left: 358px solid transparent;
+    background-color: #000;
+    top: -4px;
+    left: -4px;
   }
-  &:before {
-    content: "";
-    position: absolute;
-    top:0;
-    left: 0;
-    border-bottom: 358px solid rgba(0,0,0,0.25);
-    border-right: 358px solid transparent;
+  &::before {
+    width: calc(100% + 8px);
+    height: 1px;
+  }
+  &::after {
+    height: calc(100% + 8px);
+    width: 1px;
   }
 }
-.section__text-block_inner {
-  padding: 60px 60px 69px 60px;
+.section__box_inner {
   position: relative;
-  z-index: 1;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: #000;
+    bottom: -4px;
+    right: -4px;
+  }
+  &::before {
+    width: calc(100% + 8px);
+    height: 1px;
+  }
+  &::after {
+    height: calc(100% + 8px);
+    width: 1px;
+  }
 }
-.section__text-block-heading {
+.section__box-heading {
   text-align: center;
   font-size: 1.5rem;
   font-family: 'Cormorant', sans-serif;
   font-weight: 600;
   font-variant: small-caps;
   color: $main-color;
-
   &:after {
     content: '';
     display: block;
@@ -201,9 +203,43 @@
     background-position: -141px -2px;
   }
 }
-.section__text-block-paragraph {
-  text-align: center;
+.section__box_outer {
+  max-width: 372px;
 }
+.section__box-text-container {
+  padding: 45px 40px 41px;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.75);
+  &:after {
+    content: "";
+    position: absolute;
+    top:0;
+    right: 0;
+    background-image: linear-gradient(to right top, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 50%, transparent 50%);
+    width: 100%;
+    height: 100%;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    position: absolute;
+    top:0;
+    right: 0;
+    background-image: linear-gradient(to left top, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 50%, transparent 50%);
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.section__box-paragraphs {
+  position: relative;
+  z-index: 1;
+}
+.section__box-paragraph {
+  margin-top: 20px;
+}
+
 .section__text-block_btn {
   display: block;
   margin-top: 20px;
@@ -221,6 +257,7 @@
   }
 }
 // Building end
+
 // Apartments start
 .apartments {
   position: relative;
