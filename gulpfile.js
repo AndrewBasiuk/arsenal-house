@@ -15,25 +15,51 @@ var gulp           = require('gulp'),
 
 // Скрипты проекта
 
-gulp.task('common-js', function() {
+// All start 
+gulp.task('all-js', function() {
 	return gulp.src([
+		'src/js/useful_functions.js',
+		'src/js/libs/slick.min.js',
 		'src/js/common.js',
 		])
-	.pipe(concat('common.js'))
-	/*.pipe(uglify())*/
-	.pipe(gulp.dest('src/js'));
+	.pipe(concat('all.min.js'))
+	.pipe(uglify())
+	.pipe(gulp.dest('dist/js'));
+});
+// All end 
+
+gulp.task('common-js', function() {
+	return gulp.src([
+		'src/js/useful_functions.js',
+		'src/js/common.js',
+		])
+	.pipe(concat('common.min.js'))
+	.pipe(uglify())
+	.pipe(gulp.dest('dist/js'));
 });
 
-gulp.task('js', ['common-js'], function() {
+// Main start
+gulp.task('main-js', function() {
+	return gulp.src([
+		'src/js/libs/slick.min.js',
+		'src/js/main.js',
+		])
+	.pipe(concat('main.min.js'))
+	.pipe(uglify())
+	.pipe(gulp.dest('dist/js'));
+});
+// Main end
+
+gulp.task('js', ['common-js', 'main-js'], function() {
 	return gulp.src([
 		'src/js/libs/slick.min.js',
 		'src/js/main.js',
 		'src/js/common.js'
 		])
-	.pipe(concat('scripts.js'))
-	// .pipe(uglify()) // Минимизировать весь js (на выбор)
+	.pipe(concat('scripts.min.js'))
+	.pipe(uglify()) // Минимизировать весь js (на выбор)
 	.pipe(gulp.dest('dist/js'))
-	.pipe(browserSync.reload({stream: true}));
+	.pipe(browserSync.reload({stream: true}))
 });
 
 gulp.task('browser-sync', function() {

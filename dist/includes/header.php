@@ -1,4 +1,4 @@
-<header>
+<header class="header">
         <nav class="nav-container">
             <div class="wrapper nav">
                 <ul class="nav__left">

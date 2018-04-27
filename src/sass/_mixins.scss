@@ -20,3 +20,105 @@
 		}
 	}
 }
+
+@mixin backgroundImage() {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+@function calcDimension($dimension) {
+	@return $dimension * 2;
+}
+
+@mixin lineTopLeft($dimension, $color: #000) {
+	position: relative;
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		background-color: $color;
+		top: -$dimension;
+		left: -$dimension;
+	}
+	&::before {
+		height: 1px;
+	}
+	&::after {
+		width: 1px;
+	}
+}
+
+@mixin lineBottomRight($dimension, $color: #000) {
+	position: relative;
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		background-color: $color;
+		bottom: -$dimension;
+		right: -$dimension;
+	}
+	&::before {
+		height: 1px;
+	}
+	&::after {
+		width: 1px;
+	}
+}
+
+@mixin btn_1($width: 240px) {
+	transition: all $transitionTime1;
+	position: relative;
+	text-align: center;
+	a {
+		color: $main-color;
+		display: block;
+		position: relative;
+		z-index: 2;
+		transition: all $transitionTime1;
+	}
+	&::before{
+		content: '';
+		position: absolute;
+		width: $width;
+		height: 100%;
+		bottom: 0;
+		left: 0;
+		z-index: 1;
+		opacity: 1;	
+		border-top: 1px solid $main-color;
+		border-bottom: 1px solid $main-color;
+		transition: all $transitionTime1;
+		}
+	&::after{
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: $width;
+		height: 100%;
+		opacity: 1;
+		z-index: 1;
+		transform: scale(0.1, 1);
+		//background-color: rgba(91, 78, 75, 0.4);
+		transition: all $transitionTime1;
+	}
+	&:hover {
+		cursor: pointer;
+		a {
+			color: #000;
+		}
+		&::before {
+		opacity: 0;
+		transform: scale(0.1, 1);
+		transition: all $transitionTime1;
+		}
+		&::after{
+		transform: scale(1, 1);
+		background-color: $main-color;
+		transition: all $transitionTime1;
+		}
+	}
+	  
+}

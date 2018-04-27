@@ -32,10 +32,10 @@
         </div>
     </section>
 
-    <section class="building">
-        <canvas class="building__canvas" width="1800" height="872"></canvas>
+    <section class="building clearfix animate-me">
+        <canvas class="building__canvas" width="2091" height="1013"></canvas>
         <div class="building__inner wrapper">
-            <div class="section__box_buiding">
+            <div class="section__box section__box_buiding">
                 <div class="section__box_outer">
                     <div class="section__box_inner">
                         <div class="section__box-text-container">
@@ -43,9 +43,14 @@
                                 <h4 class="section__box-heading">The Building</h4>
                             </div>
                             <div class="section__box-paragraphs">
-                                <p class="section__box-paragraph">Часи змінюються, але історичний центр поблизу Парламенту та набережної Дніпра залишається найбільш респектабельним місцем для проживання.</p>
-                                <p class="section__box-paragraph">Ласкаво просимо до Arsenal House - ідеальне місце для тих, хто завжди знаходиться в центрі подій, але при цьому цінує тишу та спокій! Горда архітектура фасадів з ювелірною точністю вписана в самобутній район Печерська, де до сих пір зберігся дух старого Києва.</p>
-                                <p class="section__box-paragraph">Арсенал справжніх асоціацій, атмосфера та стан душі</p>
+                                <p class="section__box-paragraph section__box-paragraph_1">Часи змінюються, але історичний центр поблизу Парламенту та набережної Дніпра залишається найбільш респектабельним місцем для проживання.</p>
+                                <p class="section__box-paragraph section__box-paragraph_2">Ласкаво просимо до Arsenal House - ідеальне місце для тих, хто завжди знаходиться в центрі подій, але при цьому цінує тишу та спокій! Горда архітектура фасадів з ювелірною точністю вписана в самобутній район Печерська, де до сих пір зберігся дух старого Києва.</p>
+                                <p class="section__box-paragraph section__box-paragraph_3">Арсенал справжніх асоціацій, атмосфера та стан душі</p>
+                            </div>
+                            <div class="section__box-btn-wrapper">
+                                <div class="section__box-btn">
+                                    <a href="#">Перейти до Переваг</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -60,48 +65,66 @@
         </div>
     </section>
 
-    <section class="apartments">
-        <div class="apartments__inner wrapper">
-            <div class="section__text-block_outer apartments__text-block">
-                <div class="section__text-block">
-                    <div class="section__text-block_inner">
-                        <h3 class="section__text-block-heading">Apartments</h3>
-                        <p class="section__text-block-paragraph">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, 
-                            стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар...
-                        </p>
-                        <a href="#" class="section__text-block_btn btn">Детальніше</a>
+    <section class="apartments animate-me">
+        <div class="apartments__inner">
+            <div class="section__box section__box_apartments animate-me">
+                <div class="section__box_outer">
+                    <div class="section__box_inner">
+                        <div class="section__box-text-container">
+                            <div>
+                                <h4 class="section__box-heading">Apartments</h4>
+                            </div>
+                            <div class="section__box-paragraphs">
+                                <p class="section__box-paragraph section__box-paragraph_1">Arsenal House - мистецтво неквапливої і вдумливої насолоди життям в оточенні вічної краси.</p>
+                                <p class="section__box-paragraph section__box-paragraph_2">Всього 139 квартир. Камерна атмосфера і оточення респектабельного кола сусідів дарують дорогоцінне відчуття приватності та спокою.</p>
+                            </div>
+                            <div class="section__box-btn-wrapper">
+                                <div class="section__box-btn">
+                                    <a href="#">Обрати квартиру</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="building__next-view">
                 <div class="next-view next-view_brown">
-                    <a href="#" data-nextView=".infrastructure">Наступна <span class="next-view__icon next-view__icon_brown"></span>сторiнка</a>
+                    <a href="#" data-nextView=".location">Наступна <span class="next-view__icon next-view__icon_brown"></span>сторiнка</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="infrastructure">
+    <section class="location animate-me">
         <div class="ba-slider">
-            <img src="img/main/infrastructure_paint.jpg" alt="Slider paint image">
+            <img src="img/main/location_paint.jpg" alt="Slider paint image">
             <div class="resize">
-                <img src="img/main/infrastructure.jpg" alt="Slider image">
+                <img src="img/main/location.jpg" alt="Slider image">
             </div>
             <span class="handle"></span>
         </div>
-        <div class="infrastructure__inner wrapper">
-            <div class="infrastructure__text-block section__text-block">
-                <div class="section__text-block_inner">
-                    <h3 class="section__text-block-heading">Infrastructure</h3>
-                    <p class="section__text-block-paragraph">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, 
-                        стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар...
-                    </p>
-                    <div class="section__text-block_btn-container">
-                        <a href="#" class="section__text-block_btn btn">Детальніше</a>
+        <div class="location__inner wrapper">
+            <div class="section__box section__box_location">
+                <div class="section__box_outer">
+                    <div class="section__box_inner">
+                        <div class="section__box-text-container">
+                            <div>
+                                <h4 class="section__box-heading">Locaton</h4>
+                            </div>
+                            <div class="section__box-paragraphs">
+                                <p class="section__box-paragraph section__box-paragraph_1">Локація Arsenal House поєднує дві сторони життя столиці. З одної сторони – історичне минуле України, що знаходить своє відображення в культурних пам’ятках,</p>
+                                <p class="section__box-paragraph section__box-paragraph_2">музеях та захоплюючих краєвидах зі схилів Дніпра. А з іншого боку, на Західній стороні вулиці, ритмічно та нестомно вирує серце ділового Печерська та атмосфера мегаполісу.</p>
+                            </div>
+                            <div class="section__box-btn-wrapper">
+                                <div class="section__box-btn">
+                                    <a href="#">Подивитись на карті</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="infrastructure__next-view">
+            <div class="location__next-view">
                 <div class="next-view next-view_black">
                     <a href="#" data-nextView=".quote" >Наступна <span class="next-view__icon next-view__icon_black"></span>сторiнка</a>
                 </div>
@@ -109,12 +132,17 @@
         </div>
     </section>
 
-    <section class="quote">
-        <div class="quote__quote-text quote__text hidden__frame">
-            <h3 class="quote__text_heading">У тебе є вороги? Добре. Це означає, що в своєму житті ти щось відстоював.</h3>
-        </div>
-        <div class="quote__author">
-            <h4>Сер Уінстон Черчіль</h4>
+    <section class="quote animate-me">
+        <div class="quote__text">
+            <div class="quote__frame_0">
+                <div class="quote__frame quote__frame_1"></div>
+                <div class="quote__frame quote__frame_2"></div>
+                <div class="quote__frame quote__frame_3"></div>
+                <h3 class="quote__heading">У тебе є вороги? Добре. Це означає, що в своєму житті ти щось відстоював.</h3>
+            </div>
+            <div class="quote__author">
+                <div>Сер Уінстон Черчіль</div>
+            </div>
         </div>
         <div class="quote__next-view">
             <div class="next-view next-view_brown">
@@ -123,7 +151,7 @@
         </div>
     </section>
 
-    <section class="gallery">
+    <section class="gallery animate-me">
         <div class="gallery__thumbnails">
                 <div class="thumb thumb_1"></div>
                 <div class="thumb thumb_2"></div>
@@ -144,25 +172,42 @@
             <div class="gallery__item gallery__item_7"></div>
             <div class="gallery__item gallery__item_8"></div>
         </div>
-        <div class="gallery__text-block section__text-block">
-            <div class="section__text-block_inner">
-                <h3 class="section__text-block-heading">Location</h3>
-                <p class="section__text-block-paragraph">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, 
-                    стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар...
-                </p>
-                <a href="#" class="section__text-block_btn btn">Детальніше</a>
+        <div class="section__box section__box_gallery">
+            <div class="section__box_outer">
+                <div class="section__box_inner">
+                    <div class="section__box-text-container">
+                        <div>
+                            <h4 class="section__box-heading">LifeStyle</h4>
+                        </div>
+                        <div class="section__box-paragraphs">
+                            <p class="section__box-paragraph section__box-paragraph_1">У будинку Arsenal House тихо та камерно, але лише декілька хвилин - і Ви в епіцентрі ділового та культурного Києва, з його театрами 
+                                і ресторанчиками, модними галереями і бутиками, бізнес - центрами, пабами і кав'ярнями, парками та культурними пам’ятками.</p>
+                        </div>
+                        <div class="section__box-btn-wrapper">
+                            <div class="section__box-btn">
+                                <a href="#">Детальніше</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="gallery__letter">
             <img src="img/main/gallery_letter.svg" alt="Gallery letter">
         </div>
     </section>
-    <section class="quote quote2">
-        <div class="quote__quote-text quote__text hidden__frame">
-            <h3 class="quote__text_heading">У тебе є вороги? Добре. Це означає, що в своєму житті ти щось відстоював.</h3>
-        </div>
-        <div class="quote__author">
-            <h4>Сер Уінстон Черчіль</h4>
+
+    <section class="quote quote_2 animate-me">
+        <div class="quote__text">
+            <div class="quote__frame_0">
+                <div class="quote__frame quote__frame_1"></div>
+                <div class="quote__frame quote__frame_2"></div>
+                <div class="quote__frame quote__frame_3"></div>
+                <h3 class="quote__heading">У тебе є вороги? Добре. Це означає, що в своєму житті ти щось відстоював.</h3>
+            </div>
+            <div class="quote__author">
+                <div>Сер Уінстон Черчіль</div>
+            </div>
         </div>
         <div class="quote__next-view">
             <div class="next-view next-view_brown">
@@ -170,6 +215,7 @@
             </div>
         </div>
     </section>
+
     <section class="news">
         <h3 class="news_heading">
             News
@@ -180,11 +226,10 @@
                 <div class="news__item_inner-border">
                     <div class="news__item_content">
                         <h4 class="news__item_heading">Заголовок для нової новини у три рядки тексту</h4>
-                        <p class="news__item_paragraph">Lorem Ipsum - це текст-"риба", що використовується в 
-                            друкарстві та дизайні. Lorem Ipsum є, фактично, 
-                            стандартною "рибою"...
-                        </p>
-                        <a href="#" class="section__text-block_btn news__btn btn">Детальніше</a>
+                        <p class="news__item_paragraph">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"...</p>
+                        <div class="news_more-btn">
+                            <a href="#">Детальніше</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -197,7 +242,9 @@
                             друкарстві та дизайні. Lorem Ipsum є, фактично, 
                             стандартною "рибою"...
                         </p>
-                        <a href="#" class="section__text-block_btn news__btn btn">Детальніше</a>
+                        <div class="news_more-btn">
+                            <a href="#">Детальніше</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -266,7 +313,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenLite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/plugins/CSSPlugin.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/common.min.js"></script>
+    <script src="js/main.min.js"></script>
     <script>
 
     </script>
