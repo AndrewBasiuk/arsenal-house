@@ -4,6 +4,18 @@
     top: 0;
     z-index: 5;
     width: 100%;
+    animation: slideFromTop $transitionTime1;
+    & +.hero {
+        margin-top: 100px;
+    }
+}
+@keyframes slideFromTop {
+    from {
+        top: -100%
+    }
+    to {
+        top: 0;
+    }
 }
 .nav-container {
     background-color: $black-color;
@@ -108,10 +120,15 @@ background-repeat: no-repeat;
 }
 
 .nav__callback-btn {
-a {
-    padding: 14px 17px 13px 15px;
-    border: 1px solid $secondary-color;
-}
+    a {
+        text-align: center;
+        display: inline-block;
+        width: 160px;
+        line-height: 40px;
+        border: 1px solid $secondary-color;
+        font-size: 0.875rem;
+        @include btn_2(100px);
+    }
 }
 .nav__callback-btn_mobile {
 display: none;
@@ -124,7 +141,7 @@ display: none;
     height: 20px;
     background-position: -52px 0;
 }
-.language-select {
+.language {
     height: 17px;
     width: 35px;
     position: relative;
@@ -145,7 +162,10 @@ display: none;
         right: 0;
         transform: translateY(-50%);
     }
-    &.language-select__expanded {
+    a {
+        color: $main-color;
+    }
+    &.language__expanded {
         ul {
             height: 60px;
         }

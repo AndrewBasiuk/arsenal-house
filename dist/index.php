@@ -9,6 +9,7 @@
 </head>
 <body>
     <?php include_once('includes/preloader.php'); ?>
+    <?php include_once('includes/menu.php'); ?>
     <?php include_once('includes/header.php'); ?>
 
     <section class="hero">
@@ -300,7 +301,7 @@
             </div>
         </div>
     </section>
-    <footer class="footer">
+    <footer class="footer main-footer">
         <div class="wrapper footer__wraper">
             <div class="copyright">
                 &#169; Усі права захищено. Арсенал
@@ -311,8 +312,6 @@
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenLite.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/plugins/CSSPlugin.min.js"></script>
     <script src="js/common.min.js"></script>
     <script src="js/main.min.js"></script>
     <script>

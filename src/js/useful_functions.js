@@ -19,8 +19,8 @@ function debounce(func, wait, immediate) {
 // end debounce
 
 function hideScrollBar() {
-  document.getElementsByTagName('body')[0].style.overflow = 'hidden';
-}
+  document.getElementsByTagName('body')[0].classList.add('hidden-overflow');
+};
 function showScrollBar() {
-  document.getElementsByTagName('body')[0].style.overflow = 'visible';
-}
+  document.getElementsByTagName('body')[0].classList.remove('hidden-overflow');
+};

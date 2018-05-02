@@ -1,0 +1,20 @@
+// Footer start
+.footer {
+  background-color: #000;
+  height: 70px;
+}
+.footer__wraper {
+  padding: 0px 10px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.copyright {
+  color: $main-color;
+}
+.main-footer {
+  height: auto;
+  background-color: transparent;
+}
+// Footer end

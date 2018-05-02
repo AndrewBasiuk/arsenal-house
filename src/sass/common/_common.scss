@@ -24,6 +24,10 @@ body {
     font-family: "CoreSans", sans-serif;
 }
 
+.hidden-overflow {
+    overflow: hidden;
+}
+
 a {
     color: #fff;
     text-decoration: none;
@@ -40,3 +44,48 @@ a {
         clear: both;
     }
 }
+
+.page-content {
+    padding: 0px 10px;
+}
+
+.page-heading {
+    text-align: center;
+    padding: 25px 0;
+    margin: 20px 0;
+    font-family: 'Cormorant', sans-serif;
+    font-variant: small-caps;
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: relative;
+    h1 {
+        transition: all $transitionTime3 ease-out;
+    }
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        transition: all $transitionTime3 ease-out;
+    }
+    &::before {
+        top: 0;
+        left: 0;
+    }
+    &::after {
+        bottom: 0;
+        right: 0;
+    }
+    &.animate-me {
+        h1 {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        &::before,
+        &::after {
+            width: 0%;
+        }
+    }
+}
+

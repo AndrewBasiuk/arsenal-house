@@ -20,6 +20,8 @@ gulp.task('all-js', function() {
 	return gulp.src([
 		'src/js/useful_functions.js',
 		'src/js/libs/slick.min.js',
+		'src/js/libs/TweenLite.min.js',
+		'src/js/libs/CSSPlugin.min.js',
 		'src/js/common.js',
 		])
 	.pipe(concat('all.min.js'))
@@ -31,6 +33,8 @@ gulp.task('all-js', function() {
 gulp.task('common-js', function() {
 	return gulp.src([
 		'src/js/useful_functions.js',
+		'src/js/libs/TweenLite.min.js',
+		'src/js/libs/CSSPlugin.min.js',
 		'src/js/common.js',
 		])
 	.pipe(concat('common.min.js'))
@@ -52,9 +56,9 @@ gulp.task('main-js', function() {
 
 gulp.task('js', ['common-js', 'main-js'], function() {
 	return gulp.src([
-		'src/js/libs/slick.min.js',
-		'src/js/main.js',
-		'src/js/common.js'
+		'src/js/libs/TweenLite.js',
+		'src/js/libs/CSSPlugin.js',
+		'src/js/common.js',
 		])
 	.pipe(concat('scripts.min.js'))
 	.pipe(uglify()) // Минимизировать весь js (на выбор)

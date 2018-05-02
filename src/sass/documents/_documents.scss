@@ -1,0 +1,25 @@
+.documents__wrapper {
+    @include backgroundImage();
+    background-image: url('../img/documents/documents_bg.jpg');
+    overflow: hidden;
+}
+.documents__heading {
+    &::before,
+    &::after {
+        background-color: rgba(229, 229, 229, 0.25);
+    }
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 100px);
+}
+.documents__wrapper {
+    flex: 1;
+}
+.footer {
+    flex-shrink: 0;
+}
+.documents__footer {
+    height: 48px;
+}

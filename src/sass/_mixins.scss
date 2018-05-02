@@ -120,5 +120,48 @@
 		transition: all $transitionTime1;
 		}
 	}
-	  
+}
+
+@mixin btn_2($width: 200px, $color: rgba(91,78,75,0.5)) {
+    overflow: hidden;
+	position: relative;
+	transition: color $transitionTime1;
+	z-index: 2;
+	&::before {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-left: $width solid transparent;
+        border-right: $width solid transparent;
+        border-bottom: $width + 90px solid $color;
+        z-index: -1;
+        transition: all $transitionTime1;
+	}
+	&::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-left: $width solid transparent;
+        border-right: $width solid transparent;
+        border-bottom: $width + 90px solid $color;
+        z-index: -1;
+        transition: all $transitionTime1 0.2s;
+	}
+	&:hover {
+		color: #fff;
+        &::before {
+            top: -110px;
+		}
+		&::after {
+            top: -90px;
+        }
+    }
 }

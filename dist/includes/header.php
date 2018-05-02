@@ -4,7 +4,7 @@
                 <ul class="nav__left">
                     <li class="nav__item">
                         <a href="">
-                            <div class="nav__menu-btn">
+                            <div class="nav__menu-btn js-open-menu">
                                 <div class="nav__menu-lines">
                                     <div class="nav__menu-line nav__menu-line_first"></div>
                                     <div class="nav__menu-line nav__menu-line_second"></div>
@@ -44,13 +44,15 @@
                             <div class="nav__icon nav__map_icon"></div>
                         </a>
                     </li>
-                    <li class="nav__item language-select">
-                        <ul>
-                            <li><a href="#">UKR</a></li>
-                            <li><a href="#">RUS</a></li>
-                            <li><a href="#">EN</a></li>
-                        </ul>
-                        <div class="nav__icon nav__arrow_icon"></div>
+                    <li class="nav__item">
+                        <div class="language">
+                            <ul>
+                                <li><a href="#">Укр</a></li>
+                                <li><a href="#">Рос</a></li>
+                                <li><a href="#">Анг</a></li>
+                            </ul>
+                            <div class="nav__icon nav__arrow_icon"></div>
+                        </div>
                     </li>
                     <li class="nav__item">
                         <a href="#">
