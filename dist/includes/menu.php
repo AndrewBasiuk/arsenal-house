@@ -5,7 +5,7 @@
                 <div class="menu__logo">
                     <img src="img/common/arsenal_house_logo.svg" alt="Arsenal Logo">
                 </div>
-                <a href="#">
+                <a href="webcam.php">
                     <div class="menu__icon menu__icon_webcam"></div>
                 </a>
                 <a href="#">
@@ -45,28 +45,28 @@
             </div>
             <div class="menu__middle_center">
                 <ul>
-                    <li>
+                    <li class="menu__item menu__item_1">
                         <a href="/">Головна</a>
                     </li>
-                    <li>
+                    <li class="menu__item menu__item_2">
                         <a href="advantages.php">Переваги</a>
                     </li>
-                    <li>
-                        <a href="#">Розташування</a>
+                    <li class="menu__item menu__item_3">
+                        <a href="contacts.php">Розташування</a>
                     </li>
-                    <li>
+                    <li class="menu__item menu__item_4">
                         <a href="#">Обрати квартиру</a>
                     </li>
-                    <li>
+                    <li class="menu__item menu__item_5">
                         <a href="#">Хід будівнитва</a>
                     </li>
-                    <li>
+                    <li class="menu__item menu__item_6">
                         <a href="#">Галерея</a>
                     </li>
-                    <li>
+                    <li class="menu__item menu__item_7">
                         <a href="#">Забудовник</a>
                     </li>
-                    <li>
+                    <li class="menu__item menu__item_8">
                         <a href="#">Новини</a>
                     </li>
                 </ul>
@@ -77,7 +77,7 @@
                 </a>
             </div>
             <div class="menu__middle_right">
-                <a class="menu__middle_btn" href="#">
+                <a class="menu__middle_btn" href="documents.php">
                     <div class="menu__icon menu__icon-documents"></div>
                     <span>Документи</span> 
                 </a>

@@ -17,7 +17,7 @@
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#">
+                        <a href="webcam.php">
                             <div class="nav__icon nav__webcam_icon nav__icon_desktop"></div>
                         </a>
                     </li>
@@ -31,14 +31,14 @@
                     <li class="nav__item nav__item_desk"><a href="#">Обрати кваритру</a></li>
                 </ul>
                 <div class="nav__item nav__logo-container">
-                    <a href="#">
+                    <a href="/">
                         <div class="nav__logo"></div>
                     </a>
                 </div>
                 <ul class="nav__right">
                     <li class="nav__item nav__item_desk"><a href="#">Інфраструктура</a></li>
                     <li class="nav__item nav__item_desk"><a href="#">Новини</a></li>
-                    <li class="nav__item nav__item_desk"><a href="#">Контакти</a></li>
+                    <li class="nav__item nav__item_desk"><a href="contacts.php">Контакти</a></li>
                     <li class="nav__item">
                         <a href="#">
                             <div class="nav__icon nav__map_icon"></div>
@@ -53,16 +53,6 @@
                             </ul>
                             <div class="nav__icon nav__arrow_icon"></div>
                         </div>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#">
-                            <div class="nav__icon nav__webcam_icon nav__icon_mobile"></div>
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="">
-                            <div class="nav__icon nav__mail_icon nav__icon_mobile"></div>
-                        </a>
                     </li>
                     <li class="nav__item nav__callback-btn">
                         <a href="#">Зворотній дзвінок</a>

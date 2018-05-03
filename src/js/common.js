@@ -25,8 +25,9 @@ var navFixed = (function(){
     var header = document.querySelector('.header');
     var headerHeight = header.clientHeight;
     var fixed = header.offsetTop;
+  
     function isScrolled() {
-        if(window.pageYOffset > fixed) {
+        if(window.pageYOffset > headerHeight * 2) {
             header.classList.add('header__fixed');
         } else {
             header.classList.remove('header__fixed');

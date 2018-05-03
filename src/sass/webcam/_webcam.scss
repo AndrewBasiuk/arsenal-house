@@ -1,0 +1,24 @@
+.webcam__wrapper {
+    @include backgroundImage();
+    background-image: url('../img/webcam/webcam_bg.jpg');
+    overflow: hidden;
+}
+.webcam__heading {
+    color: $secondary-color;
+    &::before,
+    &::after {
+        background-color: $secondary-color-rgba;
+    }
+}
+.webcam__wrapper {
+    flex: 1;
+}
+.webcam__status {
+    color: #000;
+    text-align: center;
+}
+.webcam__video {
+    width: 780px;
+    height: 330px;
+    margin: 30px auto 0;
+}

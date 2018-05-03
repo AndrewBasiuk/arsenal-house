@@ -13,9 +13,48 @@
     <?php include_once('includes/header.php'); ?>
     <div class="page">
         <div class="documents__wrapper">
-            <div class="page-content wrapper">
+            <div class="wrapper">
                 <div class="page-heading documents__heading animate-me">
                     <h1>Документи</h1>
+                </div>
+                <div>
+                    <ul class="documents__list js-documents__list">
+                        <li class="documents__item">
+                            <a href="img/documents/doc_1.jpg" target="_blank">
+                                <img src="img/documents/doc_1.jpg" alt="Document">
+                            </a>
+                        </li>
+                        <li class="documents__item">
+                            <a href="img/documents/doc_2.jpg" target="_blank">
+                                <img src="img/documents/doc_2.jpg" alt="Document">
+                            </a>
+                        </li>
+                        <li class="documents__item">
+                            <a href="img/documents/doc_3.jpg" target="_blank">
+                                <img src="img/documents/doc_3.jpg" alt="Document">
+                            </a>
+                        </li>
+                        <li class="documents__item">
+                            <a href="img/documents/doc_4.jpg" target="_blank">
+                                <img src="img/documents/doc_4.jpg" alt="Document">
+                            </a>
+                        </li>
+                        <li class="documents__item">
+                            <a href="img/documents/doc_5.jpg" target="_blank">
+                                <img src="img/documents/doc_5.jpg" alt="Document">
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- <div class="document__modal document__modal_hidden js-document__modal">
+                        <img class="document__modal_image js-document__modal_image" src="" alt="Modal Image" />
+                        <span class='document__modal_close-btn'>X</span>
+                    </div> -->
+                    <p class="documents__paragraph">
+                        Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. 
+                        Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками 
+                        живот.
+                    </p>
+                    <a class="documents__btn" href="#">Перейти до вибору квартири</a>
                 </div>
             </div>
         </div>

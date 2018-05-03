@@ -54,7 +54,29 @@ gulp.task('main-js', function() {
 });
 // Main end
 
-gulp.task('js', ['common-js', 'main-js'], function() {
+// Documents start
+gulp.task('documents-js', function() {
+	return gulp.src([
+		'src/js/documents.js',
+		])
+	.pipe(concat('documents.min.js'))
+	.pipe(uglify())
+	.pipe(gulp.dest('dist/js'));
+});
+// Documents end
+
+// Conacts start
+gulp.task('contacts-js', function() {
+	return gulp.src([
+		'src/js/contacts.js',
+		])
+	.pipe(concat('contacts.min.js'))
+	.pipe(uglify())
+	.pipe(gulp.dest('dist/js'));
+});
+// Conacts end
+
+gulp.task('js', ['common-js', 'main-js', 'documents-js', 'contacts-js'], function() {
 	return gulp.src([
 		'src/js/libs/TweenLite.js',
 		'src/js/libs/CSSPlugin.js',

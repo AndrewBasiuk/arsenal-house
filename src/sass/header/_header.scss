@@ -56,67 +56,74 @@ a {
 min-width: 80px;
 display: flex;
 justify-content: space-between;
+    &:hover {
+        cursor: pointer;
+        .nav__menu-line {
+            transform: none;
+        }
+    }
 }
 
 .nav__menu-lines {
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-align-items: flex-end;
+    transition: all 10s;
 }
 
 .nav__menu-line {
-height: 1px;
-background-color: $main-color;
+    height: 1px;
+    margin-top: 5px;
+    background-color: $main-color;
+    transition: transform $transitionTime1;
 }
 
 .nav__menu-line_first {
-width: 40px;
+    width: 40px;
 }
 
 .nav__menu-line_second {
-width: 22px;
+    width: 22px;
+    transform: translateX(17px);
 }
 
 .nav__menu-line_third {
-width: 32px;
+    width: 32px;
+    transform: translateX(7px);
 }
 
 .nav__icon{
-background-image: url('../img/main/main_page_icons_spritesheet.png');
-background-repeat: no-repeat;
+    background-image: url('../img/main/main_page_icons_spritesheet.png');
+    background-repeat: no-repeat;
 }
 
 .nav__webcam_icon {
-width: 17px;
-height: 20px;
-background-position: -74px 0;
+    width: 17px;
+    height: 20px;
+    background-position: -74px 0;
 }
 
 .nav__mail_icon {
-width: 19px;
-height: 16px;
-background-position: -12px 0;
+    width: 19px;
+    height: 16px;
+    background-position: -12px 0;
 }
 
 .nav__map_icon {
-width: 14px;
-height: 20px;
-background-position: -35px 0;
+    width: 14px;
+    height: 20px;
+    background-position: -35px 0;
 }
 
 .nav__arrow_icon {
-width: 6px;
-height: 8px;
-background-position: -2px 0;
+    width: 6px;
+    height: 8px;
+    background-position: -2px 0;
 }
 
 .nav__logo {
-width: 84px;
-height:60px;
-background-image: url('../img/common/arsenal_house_logo.svg');
-background-position: center;
-background-repeat: no-repeat;
+    width: 84px;
+    height:60px;
+    background-image: url('../img/common/arsenal_house_logo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .nav__callback-btn {
