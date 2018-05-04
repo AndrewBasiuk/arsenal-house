@@ -58,10 +58,10 @@
                         <a href="#">Обрати квартиру</a>
                     </li>
                     <li class="menu__item menu__item_5">
-                        <a href="#">Хід будівнитва</a>
+                        <a href="construction.php">Хід будівнитва</a>
                     </li>
                     <li class="menu__item menu__item_6">
-                        <a href="#">Галерея</a>
+                        <a href="gallery.php">Галерея</a>
                     </li>
                     <li class="menu__item menu__item_7">
                         <a href="#">Забудовник</a>
@@ -70,11 +70,11 @@
                         <a href="#">Новини</a>
                     </li>
                 </ul>
-                <a href="#">
-                    <div class="callback-btn">
+                <div class="menu__callback-btn-wrapper">
+                    <a href="#" class="menu__callback-btn">
                         <span>Зворотній дзвінок</span>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
             <div class="menu__middle_right">
                 <a class="menu__middle_btn" href="documents.php">

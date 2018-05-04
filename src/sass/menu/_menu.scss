@@ -32,6 +32,10 @@
 .menu__item_7 {transition-delay: 2.2s}
 .menu__item_8 {transition-delay: 2.4s}
 
+.menu__callback-btn-wrapper {
+    transition: all $transitionTime2 2.6s;
+}
+
 .menu__middle_left,
 .menu__middle_right {
     transition: all $transitionTime1 $transitionTime3;
@@ -42,34 +46,39 @@
     transform: translateY(-100%);
     opacity: 0;
     width: 0px;
-    transition: all $transitionTime1;
+    transition: width $transitionTime1, opacity $transitionTime1, transform $transitionTime1 $transitionTime2;
 
     .menu__top {
         transform: translateY(-50px);
-        transition: all $transitionTime1;
+        transition: all 0.1s;
     }
 
     .menu__item {
         opacity: 0;
         transform: translateY(-10px);
-        transition: all $transitionTime1;
+        transition: all 0.1s;
     }
 
     .menu__middle_left {
         opacity: 0;
         transform: translateX(-50px);
-        transition: all $transitionTime1;
+        transition: all 0.1s;
     }
 
     .menu__middle_right {
         opacity: 0;
         transform: translateX(50px);
-        transition: all $transitionTime1;
+        transition: all 0.1s;
     }
     .menu__bottom {
         opacity: 0;
         transform: translateY(50px);
-        transition: all $transitionTime1;
+        transition: all 0.1s;
+    }
+    .menu__callback-btn-wrapper {
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: all 0.1s;
     }
 }
 
@@ -228,7 +237,8 @@
     }
 }
 
-.callback-btn {
+.menu__callback-btn {
+    display: block;
     text-align: center;
     border: 1px solid $secondary-color;
     width: 240px;

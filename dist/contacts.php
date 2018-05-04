@@ -12,14 +12,52 @@
     <?php include_once('includes/menu.php'); ?>
     <?php include_once('includes/header.php'); ?>
     <div class="page">
-        <div class="contacts-page__wrapper">
-            <div class="wrapper">
-                <div class="page-heading contacts-page__heading animate-me">
-                    <h1>Contacts</h1>
-                </div>
+        <div class="contacts-page__heading-wrapper">
+            <div class="page-heading contacts-page__heading animate-me">
+                <h1>Contacts</h1>
             </div>
         </div>
-        <div class="contacts-page__map js-contacts-page__map"></div>
+        <div class="contacts__info-blocks">
+            <div class="contacts__info-block contacts__info-block_1">
+                <div class="contacts__info-block_inner">
+                    <h3 class="contacts__info-block-heading">Відділ продажів на об’єкті</h3>
+                    <ul class="contacts__info-block-list">
+                        <li class="contacts__info-block-item contacts__info-block-item_1">вул. Арсенальна 45</li>
+                        <li class="contacts__info-block-item contacts__info-block-item_2"><a href="mailto:Arsenalhouse@com.ua">Arsenalhouse@com.ua</a></li>
+                        <li class="contacts__info-block-item contacts__info-block-item_3"><a href="#">(044) 45-45-123</a></li>
+                        <li class="contacts__info-block-item contacts__info-block-item_4">
+                            <div>
+                                Пн.-Пт.:   9:00 - 19:00
+                            </div>
+                            <div>
+                                Сб.-Нд.: 10:00 - 17:00
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contacts__info-block contacts__info-block_2">
+                <div class="contacts__info-block_inner">
+                <h3 class="contacts__info-block-heading">Відділ продажів <br/>BUD Development</h3>
+                    <ul class="contacts__info-block-list">
+                        <li class="contacts__info-block-item contacts__info-block-item_1">вул. Арсенальна 45</li>
+                        <li class="contacts__info-block-item contacts__info-block-item_2"><a href="mailto:Arsenalhouse@com.ua">Arsenalhouse@com.ua</a></li>
+                        <li class="contacts__info-block-item contacts__info-block-item_3"><a href="#">(044) 45-45-123</a></li>
+                        <li class="contacts__info-block-item contacts__info-block-item_4">
+                            <div>
+                                Пн.-Пт.:   9:00 - 19:00
+                            </div>
+                            <div>
+                                Сб.-Нд.: 10:00 - 17:00
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#" class="contacts__btn"><span class="contacts__btn-iocn"></span>Зворотній зв’язок</a>
+        </div>
+        <div class="contacts-page__wrapper js-contacts-page__map">
+        </div>
         <footer class="footer documents__footer">
             <div class="wrapper footer__wraper">
                 <div class="copyright">

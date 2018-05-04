@@ -65,7 +65,7 @@ gulp.task('documents-js', function() {
 });
 // Documents end
 
-// Conacts start
+// Contacts start
 gulp.task('contacts-js', function() {
 	return gulp.src([
 		'src/js/contacts.js',
@@ -74,12 +74,34 @@ gulp.task('contacts-js', function() {
 	.pipe(uglify())
 	.pipe(gulp.dest('dist/js'));
 });
-// Conacts end
+// Contacts end
 
-gulp.task('js', ['common-js', 'main-js', 'documents-js', 'contacts-js'], function() {
+// Construction start
+gulp.task('construction-js', function() {
 	return gulp.src([
-		'src/js/libs/TweenLite.js',
-		'src/js/libs/CSSPlugin.js',
+		'src/js/libs/slick.min.js',
+		'src/js/construction.js'
+		])
+	.pipe(concat('construction.min.js'))
+	.pipe(uglify())
+	.pipe(gulp.dest('dist/js'));
+});
+// Construction end
+
+// Gallery start
+gulp.task('gallery-js', function() {
+	return gulp.src([
+		'src/js/libs/slick.min.js',
+		'src/js/gallery.js'
+		])
+	.pipe(concat('gallery.min.js'))
+	.pipe(uglify())
+	.pipe(gulp.dest('dist/js'));
+});
+// Gallery end
+
+gulp.task('js', ['common-js', 'main-js', 'documents-js', 'contacts-js', 'construction-js', 'gallery-js'], function() {
+	return gulp.src([
 		'src/js/common.js',
 		])
 	.pipe(concat('scripts.min.js'))
