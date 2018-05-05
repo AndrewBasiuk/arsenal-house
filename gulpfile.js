@@ -100,7 +100,41 @@ gulp.task('gallery-js', function() {
 });
 // Gallery end
 
-gulp.task('js', ['common-js', 'main-js', 'documents-js', 'contacts-js', 'construction-js', 'gallery-js'], function() {
+// Developer start
+gulp.task('developer-js', function() {
+	return gulp.src([
+		'src/js/libs/slick.min.js',
+		'src/js/developer.js'
+		])
+	.pipe(concat('developer.min.js'))
+	.pipe(uglify())
+	.pipe(gulp.dest('dist/js'));
+});
+// Developer end
+
+// Infrastructure start
+gulp.task('infrastructure-js', function() {
+	return gulp.src([
+		'src/js/infrastructure.js'
+		])
+	.pipe(concat('infrastructure.min.js'))
+	.pipe(uglify())
+	.pipe(gulp.dest('dist/js'));
+});
+// Infrastructure end
+
+// News start
+gulp.task('news-js', function() {
+	return gulp.src([
+		'src/js/news.js'
+		])
+	.pipe(concat('news.min.js'))
+	.pipe(uglify())
+	.pipe(gulp.dest('dist/js'));
+});
+// News end
+
+gulp.task('js', ['common-js', 'main-js', 'documents-js', 'contacts-js', 'construction-js', 'gallery-js', 'developer-js', 'infrastructure-js', 'news-js'], function() {
 	return gulp.src([
 		'src/js/common.js',
 		])

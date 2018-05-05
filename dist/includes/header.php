@@ -26,7 +26,7 @@
                             <div class="nav__icon nav__mail_icon nav__icon_desktop"></div>
                         </a>
                     </li>
-                    <li class="nav__item nav__item_desk"><a href="#">Головна</a></li>
+                    <li class="nav__item nav__item_desk"><a href="/">Головна</a></li>
                     <li class="nav__item nav__item_desk"><a href="#">Про комплекс</a></li>
                     <li class="nav__item nav__item_desk"><a href="#">Обрати кваритру</a></li>
                 </ul>
@@ -36,8 +36,8 @@
                     </a>
                 </div>
                 <ul class="nav__right">
-                    <li class="nav__item nav__item_desk"><a href="#">Інфраструктура</a></li>
-                    <li class="nav__item nav__item_desk"><a href="#">Новини</a></li>
+                    <li class="nav__item nav__item_desk"><a href="infrastructure.php">Інфраструктура</a></li>
+                    <li class="nav__item nav__item_desk"><a href="news.php">Новини</a></li>
                     <li class="nav__item nav__item_desk"><a href="contacts.php">Контакти</a></li>
                     <li class="nav__item">
                         <a href="#">

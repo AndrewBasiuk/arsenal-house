@@ -64,10 +64,10 @@
                         <a href="gallery.php">Галерея</a>
                     </li>
                     <li class="menu__item menu__item_7">
-                        <a href="#">Забудовник</a>
+                        <a href="developer.php">Забудовник</a>
                     </li>
                     <li class="menu__item menu__item_8">
-                        <a href="#">Новини</a>
+                        <a href="news.php">Новини</a>
                     </li>
                 </ul>
                 <div class="menu__callback-btn-wrapper">

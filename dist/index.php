@@ -217,7 +217,7 @@
         </div>
     </section>
 
-    <section class="news">
+    <section class="news__main-page">
         <h3 class="news_heading">
             News
         </h3>

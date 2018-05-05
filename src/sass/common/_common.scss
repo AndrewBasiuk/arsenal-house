@@ -84,7 +84,7 @@ a {
         right: 0;
     }
     &.animate-me {
-        h1 {
+        h1, h4 {
             opacity: 0;
             transform: translateY(-20px);
         }

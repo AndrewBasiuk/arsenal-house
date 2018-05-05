@@ -13,21 +13,25 @@
     <?php include_once('includes/header.php'); ?>
     <div class="page">
         <div class="gallery__wrapper">
-            <div class="gallery-main">
-                <div class="gallery-main__item gallery-main__item_1">
-                    <img src="/img/gallery/1.jpg" alt="Image 1">
+            <div class="gallery-main__container">
+                <div class="gallery-main">
+                    <div class="gallery-main__item gallery-main__item_1"></div>
+                    <div class="gallery-main__item gallery-main__item_2"></div>
+                    <div class="gallery-main__item gallery-main__item_3"></div>
+                    <div class="gallery-main__item gallery-main__item_4"></div>
+                    <div class="gallery-main__item gallery-main__item_5"></div>
+                    <div class="gallery-main__item gallery-main__item_6"></div>
                 </div>
-                <div class="gallery-main__item gallery-main__item_2">
-                    <img src="/img/gallery/2.jpg" alt="Image 1">
-                </div>
-                <div class="gallery-main__item gallery-main__item_3">
-                 <img src="/img/gallery/3.jpg" alt="Image 1">
-                </div>
-                <div class="gallery-main__item gallery-main__item_4">
-                    <img src="/img/gallery/4.jpg" alt="Image 1">
-                </div>
-                <div class="gallery-main__item gallery-main__item_5">
-                    <img src="/img/gallery/5.jpg" alt="Image 1">
+            </div>
+            <div class="gallery-side__container">
+                <div class="gallery-side">
+                    <div class="gallery-side__item gallery-side__item_1"></div>
+                    <div class="gallery-side__item gallery-side__item_2"></div>
+                    <div class="gallery-side__item gallery-side__item_3"></div>
+                    <div class="gallery-side__item gallery-side__item_4"></div>
+                    <div class="gallery-side__item gallery-side__item_5"></div>
+                    <div class="gallery-side__item gallery-side__item_6"></div>
+
                 </div>
             </div>
         </div>
