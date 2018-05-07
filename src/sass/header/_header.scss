@@ -8,6 +8,9 @@
     & +.hero {
         margin-top: 100px;
     }
+    & +.page {
+        margin-top: 100px;
+    }
 }
 @keyframes slideFromTop {
     from {
@@ -19,37 +22,37 @@
 }
 .nav-container {
     background-color: $black-color;
-  }
+}
 .nav {
-display: flex;
-justify-content: space-between;
-align-items: center;
-&>ul {
-    min-height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+    &>ul {
+        min-height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 .nav__left,
 .nav__right {
-width: 42%;
+    width: 42%;
 }
 
 .nav__item {
-a {
-    color: $main-color;
-}
+    a {
+        color: $main-color;
+    }
 }
 
 .nav__item_desk {
-a { 
-    color: $secondary-color;
-    transition: color 0.3s;
-    &:hover {
-    color: $main-color;
+    a { 
+        color: $secondary-color;
+        transition: color 0.3s;
+        &:hover {
+        color: $main-color;
+        }
     }
-}
 }
 
 .nav__menu-btn {
@@ -138,10 +141,10 @@ justify-content: space-between;
     }
 }
 .nav__callback-btn_mobile {
-display: none;
+    display: none;
 }
 .nav__icon_mobile {
-display: none;
+    display: none;
 }
 .nav__phone_icon {
     width: 20px;

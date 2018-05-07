@@ -55,7 +55,7 @@
                         <a href="contacts.php">Розташування</a>
                     </li>
                     <li class="menu__item menu__item_4">
-                        <a href="#">Обрати квартиру</a>
+                        <a href="choose-apartment.php">Обрати квартиру</a>
                     </li>
                     <li class="menu__item menu__item_5">
                         <a href="construction.php">Хід будівнитва</a>

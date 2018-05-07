@@ -1,0 +1,78 @@
+.terOfpur__wrapper {
+    @include backgroundImage();
+    background-image: url('../img/terms-of-purchase/terms-of-purchase_bg.jpg');
+    overflow: hidden;
+}
+.terOfpur__heading {
+    &::before,
+    &::after {
+        background-color: rgba(229, 229, 229, 0.25);
+    }
+}
+.terOfpur__wrapper {
+    flex: 1;
+}
+.terOfpur__tab {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 60px;
+    border: 1px solid #656668;
+    &:hover {
+        cursor: pointer;
+    }
+}
+.terOfpur__tab_1 {
+    &.terOfpur__tab-active {
+        color: $main-color;
+        border-bottom: none;
+        border-right: none;
+        &:hover {
+            cursor: default;
+        }
+    }
+}
+
+.terOfpur__tab_2 {
+    &.terOfpur__tab-active {
+        color: $main-color;
+        border-bottom: none;
+        border-left: none;
+        &:hover {
+            cursor: default;
+        }
+    }
+}
+
+.terOfpur__tabs_content {
+    border: 1px solid #656668;
+    border-top: none;
+    padding: 50px 0px 45px;
+}
+
+.terOfpur__tabs_content-wrapper {
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 24px;
+    li {
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 3px;
+            height: 2px;
+            vertical-align: middle;
+            background-color: currentColor;
+            margin-right: 35px;
+        }
+    }
+    p {
+        margin-top: 20px;
+    }
+}
+.terOfpur__tabs_btn {
+    width: 350px;
+    line-height: 46px;
+    margin: 30px auto 0px;
+    @include btn_3();
+}

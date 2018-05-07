@@ -26,6 +26,10 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    .news__item {
+        width: 49%;
+        margin-bottom: 20px;
+    }
 }
 .news__item {
     width: 48%;
@@ -41,13 +45,42 @@
 .news__item_id-2 {
     background-image: url('../img/main/news/news_item_2.jpg');
 }
+.news__item_id-3 {
+    background-image: url('../img/news/3.jpg');
+}
+.news__item_id-4 {
+    background-image: url('../img/news/4.jpg');
+}
+.news__item_id-5 {
+    background-image: url('../img/news/5.jpg');
+}
+.news__item_id-6 {
+    background-image: url('../img/news/6.jpg');
+}
+.news__item_id-7 {
+    background-image: url('../img/news/7.jpg');
+}
+.news__item_id-8 {
+    background-image: url('../img/news/8.jpg');
+}
+.news__item_id-9 {
+    background-image: url('../img/news/9.jpg');
+}
+.news__item_id-10 {
+    background-image: url('../img/news/10.jpg');
+}
+.news__date {
+    position: absolute;
+    top: 35px;
+    left: 25px;
+}
 .news__item_inner-border {
     width: 100%;
     height: 100%;
     border: 1px solid $main-color;
 }
 .news__item_content {
-    width: 50%;
+    width: 53%;
     height: 100%;
     margin-left: auto;
     margin-right: 0;
@@ -78,6 +111,43 @@
     width: 225px;
     margin: 25px auto 40px;
     a {
+        line-height: 45px;
+    }
+}
+.news__pagination {
+    width: 320px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.news__pagination_item {
+    display: inline-block;
+    a {
+        color: $secondary-color;
+        display: inline-block;
+        width: 40px;
         line-height: 40px;
+        text-align: center;
+        transition: background-color $transitionTime1;
+        &:hover {
+            background-color: $main-color;
+        }
+    }
+    
+}
+.news__pagination_item-active {
+    a {
+        color: #fff;
+        background-color: $secondary-color;
+    }
+}
+.news__pagination-btn {
+    fill: $secondary-color;
+    transition: fill $transitionTime1;
+    width: 20px;
+    height: 20px;
+    &:hover {
+        fill: $main-color;
     }
 }

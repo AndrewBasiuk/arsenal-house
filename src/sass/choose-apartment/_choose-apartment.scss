@@ -1,0 +1,13 @@
+.choose-apartment__wrapper {
+    flex: 1;
+    @include backgroundImage();
+    background-image: url('../img/choose-apartment/choose-apartment_bg.png');
+
+}
+.choose-apartment__heading {
+    color: #fffefe;
+    &::before,
+    &::after {
+        background-color: rgba(229, 229, 229, 0.25);
+    }
+}

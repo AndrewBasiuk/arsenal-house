@@ -134,7 +134,54 @@ gulp.task('news-js', function() {
 });
 // News end
 
-gulp.task('js', ['common-js', 'main-js', 'documents-js', 'contacts-js', 'construction-js', 'gallery-js', 'developer-js', 'infrastructure-js', 'news-js'], function() {
+// News open start
+gulp.task('news-open-js', function() {
+	return gulp.src([
+		'src/js/libs/slick.min.js',
+		'src/js/news-open.js'
+		])
+	.pipe(concat('news-open.min.js'))
+	.pipe(uglify())
+	.pipe(gulp.dest('dist/js'));
+});
+// News open end
+
+
+// Terms Of Purchase
+gulp.task('terms-of-purchase-js', function() {
+	return gulp.src([
+		'src/js/terms-of-purchase.js'
+		])
+	.pipe(concat('terms-of-purchase.min.js'))
+	.pipe(uglify())
+	.pipe(gulp.dest('dist/js'));
+});
+// Terms Of Purchase end
+
+// Choose Apartment
+gulp.task('choose-apartment-js', function() {
+	return gulp.src([
+		'src/js/choose-apartment.js'
+		])
+	.pipe(concat('choose-apartment.min.js'))
+	.pipe(uglify())
+	.pipe(gulp.dest('dist/js'));
+});
+// Choose Apartment end
+
+gulp.task('js', [
+	'common-js', 
+	'main-js', 
+	'documents-js', 
+	'contacts-js', 
+	'construction-js', 
+	'gallery-js', 
+	'developer-js', 
+	'infrastructure-js', 
+	'news-js',
+	'news-open-js',
+	'terms-of-purchase-js',
+	'choose-apartment-js'], function() {
 	return gulp.src([
 		'src/js/common.js',
 		])
