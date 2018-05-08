@@ -1,0 +1,58 @@
+@media only screen and (max-width: 1200px) {
+    .nav-container {
+        .nav {
+            padding: 0px 5px;    
+        }
+    }
+} //media 1200 end 
+
+@media only screen and (max-width: 1000px) {
+    .nav__item_desk {
+        display: none;
+    }
+    .nav__left {
+        width: 30%;
+    }
+    .nav__right {
+        width: 30%;
+    }
+} //media 1000px end 
+
+@media only screen and (max-width: 768px) {
+    .nav__left {
+        width: 40%;
+    }
+    .nav__right {
+        width: 40%;
+    }
+    .header__webcam,
+    .header__mail,
+    .header__map,
+    .header__language {
+        display: none;
+    }
+} //media 768px end 
+
+@media only screen and (max-width: 660px) {
+    .nav__left {
+        width: 30%;
+    }
+    .nav__right {
+        width: 30%;
+    }
+    .language-select {
+        display: none;
+    }
+    .nav__icon_desktop {
+        display: none;
+    }
+    .nav__callback-btn {
+        display: none;
+    }
+    .nav__icon_mobile {
+        display: block;
+    }
+    .nav__callback-btn_mobile {
+        display: block;
+    }
+}//media 660px end 

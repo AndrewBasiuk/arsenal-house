@@ -5,10 +5,10 @@
                 <div class="menu__logo">
                     <img src="img/common/arsenal_house_logo.svg" alt="Arsenal Logo">
                 </div>
-                <a href="webcam.php">
+                <a href="webcam.php" class="menu__webcam icon-hover">
                     <div class="menu__icon menu__icon_webcam"></div>
                 </a>
-                <a href="#">
+                <a href="#" class="menu__mail icon-hover">
                     <div class="menu__icon menu__icon_mail"></div>
                 </a>
             </div>
@@ -16,16 +16,16 @@
                 Меню
             </div>
             <div class="menu__top_right">
-                <a href="">
+                <a href="contacts.php" class="menu__location icon-hover">
                     <div class="menu__icon menu__icon_location"></div>
                 </a>
-                <div class="language">
+                <div class="language menu__language">
                     <ul>
                         <li><a href="#">Укр</a></li>
                         <li><a href="#">Рос</a></li>
                         <li><a href="#">Анг</a></li>
                     </ul>
-                    <div class="nav__icon nav__arrow_icon"></div>
+                    <div class="nav__arrow_icon"></div>
                 </div>
                 <div class="menu__close js-close-menu">
                     <div class="outer">

@@ -212,7 +212,7 @@
         </div>
         <div class="quote__next-view">
             <div class="next-view next-view_brown">
-                <a href="#" data-nextView=".news">Наступна <span class="next-view__icon next-view__icon_brown"></span>сторiнка</a>
+                <a href="#" data-nextView=".news__main-page">Наступна <span class="next-view__icon next-view__icon_brown"></span>сторiнка</a>
             </div>
         </div>
     </section>
@@ -261,8 +261,8 @@
             <div class="contacts__info">
                 <ul>
                     <li><span class="contacts__icon contacts__icon_mail"></span><a href="#">Arsenalhouse@com.ua</a></li>
-                    <li><span class="contacts__icon contacts__icon_webcam"></span><a href="#">Веб -камера</a></li>
-                    <li><span class="contacts__icon contacts__icon_address"></span><a href="#">вул. Арсенальна 45</a></li>
+                    <li><span class="contacts__icon contacts__icon_webcam"></span><a href="webcam.php">Веб -камера</a></li>
+                    <li><span class="contacts__icon contacts__icon_address"></span><a href="contacts.php">вул. Арсенальна 45</a></li>
                     <li><span class="contacts__icon contacts__icon_phone"></span><a href="#">(044) 45-45-123</a></li>
 
                 </ul>

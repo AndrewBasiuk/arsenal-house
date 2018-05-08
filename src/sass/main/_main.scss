@@ -25,13 +25,9 @@
   height: 100%;
   left: 50%;
   bottom: 0;
-  transform: translateX(-50%);
   img {
     height: 100%;
-  }
-  svg {
-    height: 100%;
-
+    transform: translateX(-50%);
   }
 }
 .hero__main-text {
@@ -48,15 +44,10 @@
   top: 60%;
   transform: translate(-50%);
   a {
-    display: block;
     width: 154px;
-    height: 60px;
     line-height: 60px;
     text-align: center;
-    color: $main-color;
-    background-color: rgba(91, 78, 75, 0.25);
-    border-top: 1px solid $secondary-color;
-    border-bottom: 1px solid $secondary-color;
+    @include btn_3();
   }
 }
 .next-view {
@@ -112,6 +103,10 @@
   background-size: cover;
   width: 100%;
   max-width: 2000px;
+  &:hover {
+    cursor: url(../img/main/paint_brush.png), auto;
+    
+  }
 }
 .building {
   width: 100%;
@@ -428,7 +423,6 @@
   }
 }
 .gallery {
-  min-height: 700px;
   width: 100%;
   position: relative;
 }
@@ -494,13 +488,14 @@
 .gallery__item_8 {background-image: url('../img/main/gallery/8.jpg');}
 
 .gallery__letter {
-  position: absolute;
-  top: 0;
-  right: 0;
   height: 100%;
+ // width: 742px;
   transition: all $transitionTime1;
   img {
     height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
 

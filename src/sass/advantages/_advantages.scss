@@ -8,15 +8,15 @@
 .advantages__main-content {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
-.adantages__left,
-.adantages__right {
+.advantages__left,
+.advantages__right {
     width: 49%;
 }
-.adantages__left {
-    img {
-        width: 100%;
-    }
+.advantages__left {
+    @include backgroundImage();
+    background-image: url('../img/advantages/advantages_img.jpg');
 }
 .advantages__text {
     font-size: 1.125rem;
@@ -81,7 +81,7 @@
 .advantages__btn {
     margin: 60px auto;
     text-align: center;
-    width: 380px;
+    max-width: 380px;
     line-height: 60px;
     display: block;
     background-color: $secondary-color;

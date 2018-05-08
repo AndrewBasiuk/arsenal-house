@@ -17,10 +17,9 @@
                 <h1>Переваги</h1>
             </div>
             <div class="advantages__main-content">
-                <div class="adantages__left advantages__image">
-                    <img src="img/advantages/advantages_img.jpg" alt="Advantages Image">
+                <div class="advantages__left advantages__image">
                 </div>
-                <div class="adantages__right">
+                <div class="advantages__right">
                     <p class="advantages__text advantages__color">
                         Arsenal House — це яскравий фасад будинку, функціональні планування квартир, гармонійне поєднання 
                         природи та сучасної архітектури:

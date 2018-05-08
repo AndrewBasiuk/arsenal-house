@@ -172,7 +172,7 @@
 	text-align: center;
 	background-color: $secondary-color-rgba;
     color: $main-color;
-    z-index: 1;
+    //z-index: 1;
 	transition: background-color $transitionTime1;
 	&::before {
         content: '';
@@ -183,7 +183,7 @@
         height: 100%;
         border-top: 1px solid $secondary-color;
         border-bottom: 1px solid $secondary-color;
-        z-index: -1;
+        //z-index: -1;
         transition: transform $transitionTime1;
     }
     &:hover {

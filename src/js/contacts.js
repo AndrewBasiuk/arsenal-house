@@ -2,21 +2,36 @@ var contactsMap = (function() {
 
     var xmlhttp = new XMLHttpRequest();
     var url = "/js/map.style.json";
+    var globalStyles;
 
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             var styles = JSON.parse(this.responseText);
+            globalStyles = styles;
             initMap(styles);
         };
     };
     xmlhttp.open("GET", url, true);
     xmlhttp.send();
 
+
     function initMap(styles) {
 
         var mapContainer = document.querySelector('.js-contacts-page__map');
-        var mapCenter = {lat: 50.4214105, lng: 30.5372675};
+        var mapCenter = {lat: 50.4214105, lng: 30.5432675};
         var infowindow = null;
+        var zoom = 15;
+
+        var windowWidth = window.innerWidth;
+        console.log(windowWidth)
+        if(windowWidth < 900) {
+            zoom = 14;
+        } else if(windowWidth < 767) {
+            zoom = 14;
+            mapCenter = {lat: 50.5214105, lng: 30.5432675};
+        }
+        console.log(mapCenter);
+
         var icons = {
             sales_dep: {
                 icon: '../img/contacts/sales_dep.png'
@@ -31,7 +46,7 @@ var contactsMap = (function() {
         ];
     
         var map = new google.maps.Map(mapContainer, {
-            zoom: 15,
+            zoom: zoom,
             center: mapCenter,
             disableDefaultUI: true,
             styles: styles
@@ -61,7 +76,8 @@ var contactsMap = (function() {
 
     };//end initMap
 
-
-
+    window.addEventListener('resize', debounce(function() {
+        initMap(globalStyles);
+    }, 100));
 
 })();

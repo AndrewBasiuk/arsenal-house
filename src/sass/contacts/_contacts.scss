@@ -24,7 +24,7 @@
 
 .contacts-page__wrapper {
     flex: 1;
-    min-height: 800px;
+    min-height: 900px;
 }
 
 .contacts__infowindow {
@@ -33,9 +33,9 @@
 
 .contacts__info-blocks {
     position: absolute;
-    top: 25%;
+    top: 300px;
     right: 2%;
-    z-index: 5;
+    z-index: 4;
 }
 
 .contacts__info-block_inner {

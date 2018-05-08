@@ -1,0 +1,42 @@
+@media only screen and (max-width: 1024px) {
+    .advantages__left {
+        height: 395px;
+        background-image: url('../img/advantages/advantages_img_tablet.jpg');
+    }
+    .advantages__left, 
+    .advantages__right {
+        width: 100%;
+    }
+    .advantages__right {
+        margin-top: 40px;
+    }
+    .advantages__list {
+        margin-top: 40px;
+    }
+    .advantages__item {
+        margin-bottom: 40px;
+    }
+    .advantages__btn {
+        margin: 0px auto 48px;
+    }
+    .advantages__item_icon {
+        width: 10%;
+    }
+    .advantages__item_text {
+        width: 87%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .advantages__left {
+        height: 190px;
+    }
+    .advantages__right {
+        margin-top: 20px;
+    }
+    .advantages__item_text {
+        width: 80%;
+    }
+    .advantages__item_icon {
+        width: 15%;
+    }
+}

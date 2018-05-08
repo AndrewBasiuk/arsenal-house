@@ -4,6 +4,7 @@ var galleryPage = (function() {
     var sideGal = $('.gallery-side');
 
     mainGal.slick({
+        asNavFor: sideGal,
         nextArrow: '<div class="gallery-page-arrow gallery-page-arrow_main gallery-page-arrow_next"><div></div></div>',
         prevArrow: '<div class="gallery-page-arrow gallery-page-arrow_main gallery-page-arrow_prev"><div></div></div>'
     });

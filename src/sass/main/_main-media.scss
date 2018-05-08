@@ -1,41 +1,8 @@
 @media only screen and (max-width: 1199px) {
-    // .section__box_buiding {
-    //     top: 40%;
-    //     .section__box_outer {
-    //         max-width: 700px;
-    //     }
-    //     .section__box-text-container {
-    //         padding: 10px;
-    //     }
-    // }
-    // .section__box_location {
-    //     top: 42%;
-    // }
+
 }
 
 @media only screen and (max-width: 1024px) {
-    // .next-view {
-    //     display: none;
-    // }
-    // .building {
-    //     overflow: hidden;
-    //     @include backgroundImage();
-    //     background-image: url('../img/main/the_building_orig.jpg');
-    //     height: 700px;
-    // }
-    // .building__canvas {
-    //     display: none;
-    // }
-    // .section__box_buiding {
-    //     top: 50%;
-    //     .section__box_outer {
-    //         max-width: 370px;
-    //         margin: 10px auto;
-    //     }
-    //     .section__box-text-container {
-    //         padding: 45px 40px 41px;
-    //     }
-    // }
     .location {
         overflow: hidden;
         @include backgroundImage();
@@ -51,6 +18,12 @@
     .infrastructure {
         height: auto;
     }
+    .gallery__item {
+        height: 550px;
+    }
+    // .gallery__letter {
+    //     width: 530px;
+    // }
 }
 
 @media only screen and (max-width: 768px) {
