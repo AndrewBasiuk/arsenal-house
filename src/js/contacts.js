@@ -23,14 +23,12 @@ var contactsMap = (function() {
         var zoom = 15;
 
         var windowWidth = window.innerWidth;
-        console.log(windowWidth)
         if(windowWidth < 900) {
             zoom = 14;
         } else if(windowWidth < 767) {
             zoom = 14;
             mapCenter = {lat: 50.5214105, lng: 30.5432675};
         }
-        console.log(mapCenter);
 
         var icons = {
             sales_dep: {

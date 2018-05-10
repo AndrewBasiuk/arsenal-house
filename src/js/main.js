@@ -102,33 +102,31 @@
   _initSliders();
 
   function _initSliders() {
-    var slidestoShow = 7;
-    var verticalSldier = true;
-    // var windowHeight = window.innerHeight;
-    var windowWidth = window.innerWidth;
-    if(windowWidth < 1024) {
-      slidestoShow = 5;
-    }
-    // if(windowHeight < 600) {
-    //   slidestoShow = 4;
-    // } else if(windowHeight < 760) {
-    //   slidestoShow = 6;
-    // } else {
-    //   slidestoShow = 7;
-    // }
-    // if(windowWidth < 768) {
-    //   verticalSldier = false;
-    //   slidestoShow = 3;
-    // }
 
     $('.gallery__thumbnails').slick({
       arrows: false,
       autoplay: true,
-      vertical: verticalSldier,
-      verticalSwiping: verticalSldier,
+      vertical: true,
+      verticalSwiping: true,
       focusOnSelect: true,
-      slidesToShow: slidestoShow,
+      slidesToShow: 7,
       asNavFor: '.gallery__items',
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 5,
+          }
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 4,
+            vertical: false,
+            verticalSwiping: false,
+          }
+        }
+      ]
     });
   
     $('.gallery__items').slick({
@@ -265,12 +263,12 @@ function drawImageProp(ctx, img, x, y, w, h, offsetX, offsetY) {
     ctx.beginPath();
     ctx.arc(mouseX, mouseY, brushRadius, 0, 2*Math.PI, true);
 
-    var grad = ctx.createRadialGradient(mouseX,mouseY,brushRadius,brushRadius,brushRadius,brushRadius);
-    grad.addColorStop(0,"transparent");
-    grad.addColorStop(1,"white");
-    ctx.fillStyle = grad;
+    // var grad = ctx.createRadialGradient(mouseX,mouseY,brushRadius,brushRadius,brushRadius,brushRadius);
+    // grad.addColorStop(0,"transparent");
+    // grad.addColorStop(1,"white");
+    // ctx.fillStyle = grad;
 
-    //ctx.fillStyle = "#fff";
+    ctx.fillStyle = "#fff";
 
     ctx.globalCompositeOperation = "destination-out";
     ctx.fill();

@@ -234,6 +234,7 @@ var animateLogoCtrl = (function() {
       // Showing scrollbar again
       showScrollBar();
       // Adding flag to sessionStorage
+      mainPageHeroAnimation();
     };
   
     function init() {
@@ -262,6 +263,15 @@ var animateLogoCtrl = (function() {
     animateLogoCtrl.preloader.style.display = 'none';
     // Because pths strokeDashffset ins't set when page loads cover is used to hide svg? when loaded cover removed
     animateLogoCtrl.preloaderCover.style.display = 'none';
+
+    mainPageHeroAnimation();
   }
+
+  function mainPageHeroAnimation() {
+    if(document.querySelector('.animate-main-page-hero')) {
+      document.querySelector('.animate-main-page-hero').classList.remove('animate-main-page-hero');
+    }
+  }
+
   // Preloader logic and animation end
   //  =====================================================================================================================

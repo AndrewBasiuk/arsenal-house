@@ -23,6 +23,14 @@
     transition-duration: $transitionTime1;
 }
 
+.menu__webcam,
+.menu__mail,
+.menu__location,
+.menu__language {
+    visibility: hidden;
+}
+
+
 .menu__item_1 {transition-delay: 1s}
 .menu__item_2 {transition-delay: 1.2s}
 .menu__item_3 {transition-delay: 1.4s}

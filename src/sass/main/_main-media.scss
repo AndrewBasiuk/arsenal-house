@@ -1,8 +1,29 @@
 @media only screen and (max-width: 1199px) {
-
+    .section__box_outer {
+        max-width: 290px;
+    }
+    .section__box-text-container {
+        padding: 25px;
+    }
 }
 
 @media only screen and (max-width: 1024px) {
+    .section__box-btn {
+        width: 240px;
+        &::before,
+        &::after {
+            width: 100%;
+        }
+    }
+    .section__box_buiding {
+        right: 2%;
+    }
+    .section__box_apartments {
+        left: 2%;
+    }
+    .section__box_location {
+        right: 2%;
+    }
     .location {
         overflow: hidden;
         @include backgroundImage();
@@ -12,6 +33,20 @@
     .ba-slider {
         display: none;
     }
+    .quote {
+        min-height: 570px
+    }
+    .quote__heading {
+        font-size: 2.25rem;
+        max-width: 340px;
+        line-height: 45px;
+    }
+    .quote__frame_0 {
+        padding: 50px 75px;
+        max-width: 500px;
+        margin: 0 auto 50px;
+    }
+
     .section__box_location {
         top: 50%;
     }
@@ -21,56 +56,120 @@
     .gallery__item {
         height: 550px;
     }
-    // .gallery__letter {
-    //     width: 530px;
-    // }
-}
-
-@media only screen and (max-width: 768px) {
-    .gallery__thumbnails {
-        top: auto;
-        left: 50%;
-        bottom: 0;
-        transform: translate(-50%, 0%);
-        width: 300px;
-    }
-    .section__box_gallery {
-        padding: 20px;
-        background-color: rgba(0,0,0,0.75);
-        .section__box_outer {
-            width: 320px;
+    .news__main-page {
+        .news__item:nth-child(2) {
+            display: none;
         }
     }
-    .gallery__letter {
-        display: none;
-    }
-    .contacts__info {
-        li {
-            width: 50%;
-            text-align: center;
-            margin-bottom: 10px;
-        }
+    .contacts {
+        margin-bottom: -40px;
     }
     .contacts__wrapper {
         max-width: 95%;
     }
-} //media 768px end
+    .contacts__info {
+        li {
+            width: 50%;
+            margin-bottom: 10px;
+        }
+    }
+    .contacts__info_item-container {
+        width: 180px;
+        margin: 0 auto;
+    }
+}
 
-@media only screen and (max-height: 700px) {
+@media only screen and (max-width: 767px) {
+    //Hero
+    .hero__letter-a {
+        height: 70%;
+    }
+    .hero__main-text {
+        top: 55%;
+    }
+    .hero__choose-apartment-btn {
+        top: 80%;
+    }
+    // Hero end
+    // Building
+    .building {
+        overflow: hidden;
+        @include backgroundImage();
+        background-image: url('../img/main/the_building_orig.jpg');
+    }
+    .building__canvas {
+        display: none;
+    }
+    .section__box {
+        position: static;
+        transform: none;
+        max-width: 360px;
+        margin: 25px auto;
+    }
+    .section__box_outer {
+        max-width: none;
+    }
+    .section__box-btn {
+        a {
+            line-height: 40px;
+        }
+    }
+    // Building end
+    // Quote start
+    .quote__heading {
+        font-size:  1.25rem;
+        font-weight: 400;
+        line-height: 30px;
+    }
+    .quote__frame_0 {
+        max-width: 355px;;
+    }
+    .quote__author {
+        text-align: center;
+        font-size: 1.25rem;
+        line-height: 12.5px;
+    }
+    // Quote end
+    // Gallery
+    .gallery {
+        height: 600px;
+        overflow: hidden;
+    }
+    .gallery__item {
+        height: 600px;
+    }
+    .section__box_gallery {
+        .section__box_outer{ 
+            padding: 20px;
+            max-width: none;
+            background-color: rgba(0,0,0,0.75);
+            margin: 0 auto;
+            width: 320px;
+
+        }
+    }
+    .gallery__thumbnails {
+        position: absolute;
+        top: auto;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 0%);
+        width: 320px;
+        .thumb {
+            height: 80px;
+        }
+    }
+    
+    .gallery__letter {
+        display: none;
+    }
+    // Gallery end
+    // Contacts
     .contacts__heading {
         padding: 30px 0px;
     }
     .contacts__paragraph {
         margin-bottom: 20px;
-    }
-} //media height 700px end 
-
-
-@media only screen and (max-width: 530px) {
-    .quote__author {
-        text-align: center;
-        font-size: 1.25rem;
-        line-height: 12.5px;
     }
     .contacts {
         height: auto;
@@ -96,4 +195,14 @@
     .input__submit {
         width: 100%;
     }
-} //media 530px end 
+    // Contacts end
+
+
+    .next-view {
+        display: none;
+    }
+
+
+
+
+} //media 768px end
