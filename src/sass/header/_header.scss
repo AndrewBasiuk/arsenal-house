@@ -20,6 +20,19 @@
         top: 0;
     }
 }
+
+.header__wrapper {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.header__language,
+.header__location,
+.header__webcam,
+.header__mail {
+    display: none;
+}
+
 .nav-container {
     background-color: $black-color;
 }
@@ -147,10 +160,14 @@ justify-content: space-between;
     display: none;
 }
 .nav__phone_icon {
-    width: 20px;
-    height: 20px;
-    background-position: -52px 0;
+    width: 39px;
+    height: 39px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-image: url('../img/common/phone.png');
+    border: 1px solid $secondary-color;
 }
+
 .language {
     height: 17px;
     width: 35px;

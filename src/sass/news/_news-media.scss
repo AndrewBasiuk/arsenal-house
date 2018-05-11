@@ -24,12 +24,14 @@
 @media only screen and (max-width: 530px) {
     .news__item_content{
         width: 100%;
-        padding: 20px 10px 0;
+        padding: 20px;
         height: auto;
-        bottom: 0;
-        top: inherit;
+        position: static;
+        background-color: none;
     }
-    .news__btn {
-        margin-bottom: 10px;
+    .news_more-btn {
+        position: absolute;
+        left: 5px;
+        width: calc(100% - 10px);
     }
 }

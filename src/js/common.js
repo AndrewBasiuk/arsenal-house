@@ -33,7 +33,9 @@ var navFixed = (function(){
             header.classList.remove('header__fixed');
         }
     };
-    window.addEventListener('scroll' ,debounce(isScrolled,100));
+    window.addEventListener('scroll' ,debounce(isScrolled,50));
+    //window.addEventListener('scroll', isScrolled);
+
 })();
 //  Fix header during scroll end
 //  =====================================================================================================================
@@ -48,8 +50,11 @@ var animateHTMLCtrl = (function() {
 
 
     // Here debounce returns your passed functions and assigns them to new vars so that you can do removeEventListener
-    var _debouncedScroll = debounce(_checkPosition, 100);
-    var _debouncedInit = debounce(init, 100);
+    // var _debouncedScroll = debounce(_checkPosition, 100);
+    // var _debouncedInit = debounce(init, 100);
+
+    var _debouncedScroll = _checkPosition;
+    var _debouncedInit = init;
 
     // if to more elements to animate remove event listener from scroll
     function _checkForAnimatedElements() {

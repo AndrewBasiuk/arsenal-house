@@ -18,15 +18,15 @@ var contactsMap = (function() {
     function initMap(styles) {
 
         var mapContainer = document.querySelector('.js-contacts-page__map');
-        var mapCenter = {lat: 50.4214105, lng: 30.5432675};
+        var mapCenter = {lat: 50.431930, lng: 30.541455};
         var infowindow = null;
-        var zoom = 15;
+        var zoom = 14;
 
         var windowWidth = window.innerWidth;
         if(windowWidth < 900) {
-            zoom = 14;
+            //zoom = 14;
         } else if(windowWidth < 767) {
-            zoom = 14;
+            //zoom = 14;
             mapCenter = {lat: 50.5214105, lng: 30.5432675};
         }
 
@@ -38,9 +38,10 @@ var contactsMap = (function() {
                 icon: '../img/contacts/main.png'
             }
         };
+        //lat: 50.414614, lng: 30.526581
         var markers = [
-            {lat: 50.421205, lng: 30.543275, type: 'sales_dep', message:'<span class="contacts__infowindow">вул. Арсенальна 45</span>'},
-            {lat: 50.414614, lng: 30.526581, type: 'main', message:'<span class="contacts__infowindow">вул. Арсенальна 45</span>'}
+            {lat: 50.414614, lng: 30.526581, type: 'sales_dep', message:'<span class="contacts__infowindow">вул. Арсенальна 45</span>'},
+            {lat: 50.4362216, lng: 30.544073, type: 'main', message:'<span class="contacts__infowindow">вул. Арсенальна 45</span>'}
         ];
     
         var map = new google.maps.Map(mapContainer, {

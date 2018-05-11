@@ -25,3 +25,28 @@
         transform: translateX(50%);
     }
 }
+@media only screen and (max-height: 900px) {
+
+    .contacts__info-block-heading {
+        font-size: 1.125rem;
+        padding: 10px 30px 5px;
+        &::after {
+            margin: 5px auto;
+        }
+    }
+    .contacts__info-block-item {
+        margin-bottom: 5px;
+    }
+    .contacts__btn {
+        line-height: 40px;
+    }
+}
+@media only screen and (max-height: 700px) {
+    .contacts-page__heading {
+        max-width: 910px;
+    }
+    .contacts__info-blocks {
+        top: 130px;
+        z-index: 10;
+    }
+}

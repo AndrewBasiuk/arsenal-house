@@ -89,15 +89,19 @@
 }
 
 .next-view {
-  font-size: 0.875rem;
-  width: 280px;
-  text-align: center;
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  padding: 12px 50px 60px;
-  transform: translate(-50%);
+  a {
+    display: block;
+    font-size: 0.875rem;
+    width: 280px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    padding: 12px 0px 60px;
+    transform: translate(-50%);
+  }
   .next-view__icon {
+    position: relative;
     display: inline-block;
     width: 23px;
     height: 25px;
@@ -121,8 +125,8 @@
   }
 }
 .next-view_black {
-  background-color: rgba(206,182,156, 0.8);
   a {
+    background-color: rgba(206,182,156, 0.8);
     color: $black-color;
   }
   .next-view__icon {
@@ -165,6 +169,7 @@
   background-position: center;
   background-size: cover;
   width: 100%;
+  height: calc(100vh - 100px);
   &:hover {
     cursor: url(../img/main/paint_brush.png), auto;
     
@@ -172,6 +177,7 @@
 }
 .building {
   width: 100%;
+  height: calc(100vh - 100px);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -296,7 +302,7 @@
 .apartments {
   position: relative;
   overflow: hidden;
-  min-height: 700px;
+  height: calc(100vh - 100px);
   width: 100%;
   background: url('../img/main/apartments_orig.jpg') no-repeat center;
   background-size: cover;
@@ -330,8 +336,24 @@
 // Location start
 .location {
   position: relative;
-  max-height: 700px;
+  height: calc(100vh - 100px);
   width: 100%;
+}
+// .location__image {
+//   width: 100%;
+//   height: 100%;
+//   @include backgroundImage();
+//   background-attachment: fixed;
+// }
+// .location__image-left {
+//   background-image: url('../img/main/location_paint.jpg');
+// }
+// .location__image-right {
+//   background-image: url('../img/main/location.jpg');
+// }
+.resize {
+  width: 100%;
+  height: 100%;
 }
 
 .section__box_location {
@@ -343,6 +365,13 @@
 .ba-slider {
   position: relative;
   overflow: hidden;
+  width: 100%;
+  height: 100%;
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .ba-slider img {
@@ -393,17 +422,20 @@
 // quote start
 .quote {
   position: relative;
-  min-height: 700px;
+  height: calc(100vh - 100px);
   width: 100%;
-  background: url('../img/main/quote_bg.jpg') no-repeat center;
   background-size: cover;
   overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.quote_1 {
+  background-image: url('../img/main/quote_bg.jpg');
 }
 
 .quote_2 {
-  min-height: 700px;
-  background: url('../img/main/quote2_bg.jpg') no-repeat center;
-  background-size: cover;
+  background-image: url('../img/main/quote2_bg.jpg');
 }
 
 .quote__text {
@@ -460,13 +492,13 @@
   transition-timing-function: ease-out;
 }
 .quote__frame_1 {
-  transition-delay: 1.5s;
+  transition-delay: 0.5s;
 }
 .quote__frame_2 {
   transition-delay: 1s;
 }
 .quote__frame_3 {
-  transition-delay: 0.5s;
+  transition-delay: 1.5s;
 }
 .animate-me {
   .quote__frame_0 {
@@ -482,7 +514,7 @@
 
 // Gallery start
 .section__box_gallery {
-  right: 5%;
+  right: 2%;
   z-index: 2;
   .section__box_outer {
     border: none;
@@ -500,7 +532,9 @@
 }
 .gallery {
   width: 100%;
+  height: calc(100vh - 100px);
   position: relative;
+  overflow: hidden;
 }
 .gallery__thumbnails {
   width: 100px;
@@ -549,7 +583,7 @@
 }
 
 .gallery__item {
-  height: 900px;
+  height: calc(100vh - 100px);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

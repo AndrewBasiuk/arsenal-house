@@ -43,6 +43,12 @@
                     <span>Вид з вікон</span> 
                 </a>
             </div>
+            <div class="menu__middle_right">
+                <a class="menu__middle_btn" href="documents.php">
+                    <div class="menu__icon menu__icon-documents"></div>
+                    <span>Документи</span> 
+                </a>
+            </div>
             <div class="menu__middle_center">
                 <ul>
                     <li class="menu__item menu__item_1">
@@ -69,18 +75,18 @@
                     <li class="menu__item menu__item_8">
                         <a href="news.php">Новини</a>
                     </li>
+                    <li class="menu__item menu__item_9">
+                        <a href="infrastructure.php">Інфраструктура</a>
+                    </li>
+                    <li class="menu__item menu__item_10">
+                        <a href="terms-of-purchase.php">Умови придбання</a>
+                    </li>
                 </ul>
-                <div class="menu__callback-btn-wrapper">
+                <!-- <div class="menu__callback-btn-wrapper">
                     <a href="#" class="menu__callback-btn">
                         <span>Зворотній дзвінок</span>
                     </a>
-                </div>
-            </div>
-            <div class="menu__middle_right">
-                <a class="menu__middle_btn" href="documents.php">
-                    <div class="menu__icon menu__icon-documents"></div>
-                    <span>Документи</span> 
-                </a>
+                </div> -->
             </div>
         </div>
         <div class="menu__bottom">

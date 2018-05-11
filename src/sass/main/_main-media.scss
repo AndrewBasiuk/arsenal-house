@@ -24,18 +24,7 @@
     .section__box_location {
         right: 2%;
     }
-    .location {
-        overflow: hidden;
-        @include backgroundImage();
-        background-image: url('../img/main/location_paint.jpg');
-        height: 700px;
-    }
-    .ba-slider {
-        display: none;
-    }
-    .quote {
-        min-height: 570px
-    }
+
     .quote__heading {
         font-size: 2.25rem;
         max-width: 340px;
@@ -52,9 +41,6 @@
     }
     .infrastructure {
         height: auto;
-    }
-    .gallery__item {
-        height: 550px;
     }
     .news__main-page {
         .news__item:nth-child(2) {
@@ -83,6 +69,7 @@
     //Hero
     .hero__letter-a {
         height: 70%;
+        width: 150%;
     }
     .hero__main-text {
         top: 55%;
@@ -115,6 +102,16 @@
         }
     }
     // Building end
+    // Location 
+    .location {
+        overflow: hidden;
+        @include backgroundImage();
+        background-image: url('../img/main/location_paint.jpg');
+    }
+    .ba-slider {
+        display: none;
+    }
+    // Location end
     // Quote start
     .quote__heading {
         font-size:  1.25rem;
@@ -131,13 +128,6 @@
     }
     // Quote end
     // Gallery
-    .gallery {
-        height: 600px;
-        overflow: hidden;
-    }
-    .gallery__item {
-        height: 600px;
-    }
     .section__box_gallery {
         .section__box_outer{ 
             padding: 20px;
@@ -206,3 +196,23 @@
 
 
 } //media 768px end
+
+
+
+@media only screen and (max-width: 900px) and (max-height: 900px) {
+    .next-view {
+        a { 
+            width: 167px;
+            padding: 12px 0 20px;
+        }
+    }
+}
+
+@media only screen and (max-height: 720px) {
+    .quote__text {
+        margin: 30px auto 0;
+    }
+    .quote__frame_0 {
+        margin-bottom: 30px;
+    }
+}

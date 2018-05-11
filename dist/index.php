@@ -58,7 +58,7 @@
     </section>
 
     <section class="building clearfix animate-me">
-        <canvas class="building__canvas" width="2091" height="1013"></canvas>
+        <canvas class="building__canvas"></canvas>
         <div class="building__inner wrapper">
             <div class="section__box section__box_buiding">
                 <div class="section__box_outer">
@@ -92,8 +92,8 @@
 
     <section class="apartments animate-me">
         <div class="apartments__overlay"></div>
-        <div class="apartments__inner">
-            <div class="section__box section__box_apartments animate-me">
+        <div class="apartments__inner wrapper">
+            <div class="section__box section__box_apartments">
                 <div class="section__box_outer">
                     <div class="section__box_inner">
                         <div class="section__box-text-container">
@@ -124,7 +124,9 @@
     <section class="location animate-me">
         <div class="ba-slider">
             <img src="img/main/location_paint.jpg" alt="Slider paint image">
+            <!-- <div class="location__image location__image-left"></div> -->
             <div class="resize">
+                <!-- <div class="location__image location__image-right"></div> -->
                 <img src="img/main/location.jpg" alt="Slider image">
             </div>
             <span class="handle"></span>
@@ -152,13 +154,13 @@
             </div>
             <div class="location__next-view">
                 <div class="next-view next-view_black">
-                    <a href="#" data-nextView=".quote" >Наступна <span class="next-view__icon next-view__icon_black"></span>сторiнка</a>
+                    <a href="#" data-nextView=".quote_1" >Наступна <span class="next-view__icon next-view__icon_black"></span>сторiнка</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="quote animate-me">
+    <section class="quote quote_1 animate-me">
         <div class="quote__text">
             <div class="quote__frame_0">
                 <div class="quote__frame quote__frame_1"></div>
@@ -254,28 +256,31 @@
         <div class="wrapper news__wrapper">
 
             <div class="news__item news__item_id-1">
-                <div class="news__item_inner-border">
-                    <div class="news__item_content">
-                        <h4 class="news__item_heading">Заголовок для нової новини у три рядки тексту</h4>
-                        <p class="news__item_paragraph">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"...</p>
-                        <div class="news_more-btn">
-                            <a href="#">Детальніше</a>
-                        </div>
+                <div class="news__item_image"></div>
+                <div class="news__item-border_top-left"></div>
+                <div class="news__item-border_bottom-right"></div>
+                <div class="news__item_content">
+                    <h4 class="news__item_heading">Заголовок для нової новини у три рядки тексту</h4>
+                    <p class="news__item_paragraph">
+                        Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. 
+                        Lorem Ipsum є, фактично, стандартною "рибою"...</p>
+                    <div class="news_more-btn">
+                        <a href="#">Детальніше</a>
                     </div>
                 </div>
             </div>
 
             <div class="news__item news__item_id-2">
-                <div class="news__item_inner-border">
-                    <div class="news__item_content">
-                        <h4 class="news__item_heading">Заголовок для нової новини у три рядки тексту</h4>
-                        <p class="news__item_paragraph">Lorem Ipsum - це текст-"риба", що використовується в 
-                            друкарстві та дизайні. Lorem Ipsum є, фактично, 
-                            стандартною "рибою"...
-                        </p>
-                        <div class="news_more-btn">
-                            <a href="#">Детальніше</a>
-                        </div>
+                <div class="news__item_image"></div>
+                <div class="news__item-border_top-left"></div>
+                <div class="news__item-border_bottom-right"></div>
+                <div class="news__item_content">
+                    <h4 class="news__item_heading">Заголовок для нової новини у три рядки тексту</h4>
+                    <p class="news__item_paragraph">
+                        Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. 
+                        Lorem Ipsum є, фактично, стандартною "рибою"...</p>
+                    <div class="news_more-btn">
+                        <a href="#">Детальніше</a>
                     </div>
                 </div>
             </div>

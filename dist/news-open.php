@@ -47,31 +47,39 @@
                     <h4>Заголовок для нової новини у три рядки тексту</h4>
                 </div>
                 <div class="news-open__more-news">
+
                     <div class="news__item news__item_id-9">
                         <div class="news__date">15.03.2018</div>
-                        <div class="news__item_inner-border">
-                            <div class="news__item_content">
-                                <h4 class="news__item_heading">Заголовок для нової новини у три рядки тексту</h4>
-                                <p class="news__item_paragraph">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"...</p>
-                                <div class="news_more-btn">
-                                    <a href="#">Детальніше</a>
-                                </div>
+                        <div class="news__item_image"></div>
+                        <div class="news__item-border_top-left"></div>
+                        <div class="news__item-border_bottom-right"></div>
+                        <div class="news__item_content">
+                            <h4 class="news__item_heading">Заголовок для нової новини у три рядки тексту</h4>
+                            <p class="news__item_paragraph">
+                                Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. 
+                                Lorem Ipsum є, фактично, стандартною "рибою"...</p>
+                            <div class="news_more-btn">
+                                <a href="#">Детальніше</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="news__item news__item_id-10">
                         <div class="news__date">15.03.2018</div>
-                        <div class="news__item_inner-border">
-                            <div class="news__item_content">
-                                <h4 class="news__item_heading">Заголовок для нової новини у три рядки тексту</h4>
-                                <p class="news__item_paragraph">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"...</p>
-                                <div class="news_more-btn">
-                                    <a href="#">Детальніше</a>
-                                </div>
+                        <div class="news__item_image"></div>
+                        <div class="news__item-border_top-left"></div>
+                        <div class="news__item-border_bottom-right"></div>
+                        <div class="news__item_content">
+                            <h4 class="news__item_heading">Заголовок для нової новини у три рядки тексту</h4>
+                            <p class="news__item_paragraph">
+                                Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. 
+                                Lorem Ipsum є, фактично, стандартною "рибою"...</p>
+                            <div class="news_more-btn">
+                                <a href="#">Детальніше</a>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>

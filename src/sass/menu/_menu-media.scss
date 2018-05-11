@@ -11,4 +11,41 @@
     .menu__top_right {
         width: auto;
     }
+    .menu__middle_btn {
+        width: 170px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .menu__top {
+        padding: 0px;
+    }
+    .menu__top_center {
+        margin-left: -20px;
+    }
+    .menu__logo {
+        visibility: hidden;
+    }
+    .menu__middle {
+        width: 300px;
+        margin: 0 auto;
+    }
+    .menu__middle_btn {
+        width: 140px;
+    }
+    .menu__middle_left {
+        order: 1
+    }
+    .menu__middle_center {
+        order: 3;
+        width: 100%;
+    }
+    .menu__middle_right {
+        order: 2;
+    }
+}
+
+@media only screen and (max-height: 800px) {
+    .menu__middle_center li {
+        line-height: 40px;
+    }
 }
