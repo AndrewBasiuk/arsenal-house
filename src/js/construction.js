@@ -7,21 +7,39 @@ var constructionPage = (function() {
     var closeGal = $('.construction__close-gallery');
     var cantralGalItems = '';
     var sideGalItems = '';
+    var sideGalSladesToShow = 5;
+    var sideGalVerticalMode = true;
 
-    conItem.click(function() {
+    function initGallery() {
+
+        var windowWidth = window.innerWidth;
+        var windowHeight = window.innerHeight;
+
+        if(windowHeight < 700) {
+            sideGalSladesToShow = 3
+        }
+        if(windowHeight < 470) {
+            sideGalSladesToShow = 2
+        }
+        if(windowWidth < 767) { 
+            sideGalVerticalMode = false;
+        }
+        if(windowWidth < 370) { 
+            sideGalSladesToShow = 2
+        }
 
         hideScrollBar();
 
         cenGal.slick({
-            //asNavFor: '.construction__side-gallery',
+            asNavFor: sideGal,
             nextArrow: '<div class="gallery-arrow central-gallery-arrow central-gallery-arrow_next"><div></div></div>',
             prevArrow: '<div class="gallery-arrow central-gallery-arrow central-gallery-arrow_prev"><div></div></div>'
         });
 
         sideGal.slick({
-            slidesToShow: 5,
-            asNavFor: '.construction__central-gallery',
-            vertical: true,
+            slidesToShow: sideGalSladesToShow,
+            asNavFor: cenGal,
+            vertical: sideGalVerticalMode,
             focusOnSelect: true,
             nextArrow: '<div class="gallery-arrow side-gallery-arrow side-gallery-arrow_next"><div></div></div>',
             prevArrow: '<div class="gallery-arrow side-gallery-arrow side-gallery-arrow_prev"><div></div></div>'
@@ -42,7 +60,9 @@ var constructionPage = (function() {
         sideGal.slick('slickAdd', sideGalItems)
 
         conGalContainer.removeClass('construction__gallery_hidden');
-    });
+    };
+
+    conItem.click(initGallery);
 
     closeGal.click(function() {
         showScrollBar();

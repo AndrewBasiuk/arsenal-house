@@ -48,4 +48,8 @@
     .menu__middle_center li {
         line-height: 40px;
     }
+    .menu__container {
+        min-height: 600px;
+        overflow: auto;
+    }
 }

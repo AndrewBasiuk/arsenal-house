@@ -25,9 +25,10 @@ var contactsMap = (function() {
         var windowWidth = window.innerWidth;
         if(windowWidth < 900) {
             //zoom = 14;
-        } else if(windowWidth < 767) {
-            //zoom = 14;
-            mapCenter = {lat: 50.5214105, lng: 30.5432675};
+        } 
+        if(windowWidth < 767) {
+            zoom = 13;
+            mapCenter = {lat: 50.410930, lng: 30.541455};
         }
 
         var icons = {

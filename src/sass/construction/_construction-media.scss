@@ -1,0 +1,98 @@
+@media only screen and (max-width: 1024px) {
+    .construction__items {
+        max-width: 565px;
+        flex-direction: column;
+    }
+    .construction__item {
+        width: 500px;
+    }
+    .construction__line {
+        left: 101%;
+    }
+    .construction__item:nth-child(even) {
+        &::before {
+            top: 0px;
+            right: -12.4%;
+        }
+    }
+    .construction__item:nth-child(odd) {
+        &::before {
+            bottom: auto;
+            top: 0px;
+            left: auto;
+            right: -12.4%;
+            background-position: 49px -2px;
+        }
+    }
+}
+@media only screen and (max-width: 767px) {
+    .construction__line {
+        display: none;
+    }
+    .construction__items {
+        max-width: none;
+        justify-content: center;
+    }
+    .construction__item {
+        width: 85%;
+        height: 200px;
+        margin: 0 auto 25px;
+    }
+    .construction__item:nth-child(even),
+    .construction__item:nth-child(odd) {
+        &::before,
+        &::after {
+            content: none;
+        }
+    }
+    .construction__gallery_container {
+        flex-direction: column;
+    }
+    .construction__central-gallery_inner-container {
+        position: static;
+        transform: none;
+    }
+    .construction__central-gallery-container {
+        width: 100%;
+    }
+    .construction__side-gallery-container {
+        width: 100%;
+        .side-gallery-arrow {
+            width: 74px;
+            height: 74px;
+            display: inline-block;
+        }
+        .slick-list {
+            width: 220px;
+            display: inline-block;  
+        }
+    }
+    .construction__side-gallery {
+        text-align: center;
+    }
+    .costruction__side-gallery_image {
+        width: 74px;
+        height: 74px;
+    }
+    .side-gallery-arrow_prev {
+        div {
+            width: 14px;
+            height: 28px;
+            background-position: -127px -2px;
+        }
+    }
+    .side-gallery-arrow_next {
+        div {
+            width: 14px;
+            height: 28px;
+            background-position: -108px -2px;
+        }
+    }
+}
+@media only screen and (max-width: 370px) {
+    .construction__side-gallery-container {
+        .slick-list {
+            width: 150px;
+        }
+    }
+}

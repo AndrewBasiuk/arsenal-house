@@ -156,13 +156,17 @@
                 </div>
             </div>
             <div class="construction__gallery_container construction__gallery_hidden">
-                <div class="construction__gallery-top">
-                    <div class="construction__gallery-top-date">31 января 2018 г.</div>
-                    <div class="construction__close-gallery">
-                        <div class="construction__close-galery_icon"></div>
+                <div class="construction__central-gallery-container">
+                    <div class="construction__gallery-top">
+                        <div class="construction__gallery-top-date">31 января 2018 г.</div>
+                        <div class="construction__close-gallery">
+                            <div class="construction__close-galery_icon"></div>
+                        </div>
+                    </div>
+                    <div class="construction__central-gallery_inner-container">
+                        <div class="construction__central-gallery"></div>
                     </div>
                 </div>
-                <div class="construction__central-gallery"></div>
                 <div class="construction__side-gallery-container">
                     <div class="construction__side-gallery"></div>
                 </div>

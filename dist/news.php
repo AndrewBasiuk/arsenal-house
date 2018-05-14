@@ -18,7 +18,7 @@
                     <h1>Новости</h1>
                     <a href="#" class="news__subscribe-btn">Підписатися на новини</a>
                 </div>
-                <div class="news__ist">
+                <div class="news__list">
 
                     <div class="news__item news__item_id-1">
                         <div class="news__date">15.03.2018</div>

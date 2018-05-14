@@ -20,7 +20,8 @@
         min-height: 1000px;
     }
     .contacts__info-blocks {
-        top: 100%;
+        width: 300px;
+        top: 80%;
         right: 50%;
         transform: translateX(50%);
     }
@@ -42,11 +43,11 @@
     }
 }
 @media only screen and (max-height: 700px) {
-    .contacts-page__heading {
-        max-width: 910px;
-    }
-    .contacts__info-blocks {
-        top: 130px;
-        z-index: 10;
-    }
+    // .contacts-page__heading {
+    //     max-width: 910px;
+    // }
+    // .contacts__info-blocks {
+    //     top: 130px;
+    //     z-index: 10;
+    // }
 }

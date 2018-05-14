@@ -20,8 +20,8 @@
                 <div class="choose-apartment_dud-message">
                     <h4>Розділ знаходиться у стадії розробки</h4>
                     <div class="choose-apartment_dud-message-btns">
-                        <a href="#" class="choose-apartment_btn">Назад</a>
-                        <a href="#" class="choose-apartment_btn">На головну</a>
+                        <a href="#" class="choose-apartment_btn choose-apartment_btn-back">Назад</a>
+                        <a href="#" class="choose-apartment_btn choose-apartment_btn-main">На головну</a>
                     </div>
                 </div>
             </div>

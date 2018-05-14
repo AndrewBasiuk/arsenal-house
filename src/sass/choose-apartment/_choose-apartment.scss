@@ -26,14 +26,15 @@
         color: #fffefe;
         text-align: center;
     }
-    .choose-apartment_dud-message-btns {
-        margin-top: 21px;
-        display: flex;
-        justify-content: space-between;
-    }
-    .choose-apartment_btn {
-        width: 220px;
-        line-height: 46px;
-        @include btn_3();
-    }
+}
+.choose-apartment_dud-message-btns {
+    margin-top: 21px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.choose-apartment_btn {
+    width: 220px;
+    line-height: 46px;
+    @include btn_3();
 }

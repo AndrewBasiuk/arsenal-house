@@ -38,7 +38,7 @@
             </div>
             <div class="contacts__info-block contacts__info-block_2">
                 <div class="contacts__info-block_inner">
-                <h3 class="contacts__info-block-heading">Відділ продажів <br/>BUD Development</h3>
+                <h3 class="contacts__info-block-heading contacts__info-block-heading_bottom" >Відділ продажів BUD Development</h3>
                     <ul class="contacts__info-block-list">
                         <li class="contacts__info-block-item contacts__info-block-item_1">вул. Арсенальна 45</li>
                         <li class="contacts__info-block-item contacts__info-block-item_2"><a href="mailto:Arsenalhouse@com.ua">Arsenalhouse@com.ua</a></li>

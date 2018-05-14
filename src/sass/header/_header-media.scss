@@ -50,6 +50,7 @@
     .nav__right {
         width: 30%;
     }
+
     .language-select {
         display: none;
     }
@@ -58,6 +59,13 @@
     }
     .nav__icon_mobile {
         display: block;
+    }
+    .nav__callback-btn_mobile {
+        margin-right: 5px;
+    }
+    .nav__phone_icon {
+        width: 29px;
+        height: 29px;
     }
 
 }//media 660px end 

@@ -22,7 +22,7 @@
     background-color: $secondary-color;
     @include btn_2(260px, rgba(183, 157, 124, 0.5));
 }
-.news__ist {
+.news__list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;

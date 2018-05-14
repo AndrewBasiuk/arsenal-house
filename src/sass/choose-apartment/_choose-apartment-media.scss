@@ -1,0 +1,15 @@
+@media only screen and (max-width: 767px) {
+    .choose-apartment_dud-message {
+        width: 300px;
+    }
+    .choose-apartment_dud-message-btns {
+        justify-content: center;
+    }
+    .choose-apartment_btn-main {
+        order: 1;
+        margin-bottom: 20px;
+    }
+    .choose-apartment_btn-back {
+        order: 2;
+    }
+}
