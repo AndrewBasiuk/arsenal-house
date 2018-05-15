@@ -16,16 +16,18 @@
     height: 48px;
 }
 .documents__list {
-    max-width: 680px;
+    width: 680px;
     margin: 40px auto 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 .documents__item {
-    width: 16%;
+    width: 20%;
     img {
-        width: 100%;
+        width: 80%;
+        display: block;
+        margin: 0 auto 10px;
     }
     &:hover {
         cursor: pointer;

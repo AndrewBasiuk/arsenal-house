@@ -42,6 +42,7 @@
                         </p>
                         <a href="construction.php" class="news-open__construction-btn">Хід будівництва</a>
                     </div>
+                    <div class="clearfix"></div>
                 </div>
                 <div class="page-heading news-open__heading animate-me">
                     <h4>Заголовок для нової новини у три рядки тексту</h4>

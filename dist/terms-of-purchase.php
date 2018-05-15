@@ -18,10 +18,10 @@
                     <h1>Умови придбання</h1>
                 </div>
                 <div class="terOfpur__tabs">
-                    <div class="js-terOfpur__tabs">
-                        <div class="terOfpur__tab terOfpur__tab_1 js-terOfpur__tab terOfpur__tab-active" data-tabindex="0">Покупка квартири при 100% оплати</div><!--
-                        --><div class="terOfpur__tab terOfpur__tab_2 js-terOfpur__tab" data-tabindex="1">Покупка квартири в розстрочку</div>
-                        </div>
+                    <div class="terOfpur__tab-container js-terOfpur__tabs">
+                        <div class="terOfpur__tab terOfpur__tab_1 js-terOfpur__tab terOfpur__tab-active" data-tabindex="0">Покупка квартири при 100% оплати</div>
+                        <div class="terOfpur__tab terOfpur__tab_2 js-terOfpur__tab" data-tabindex="1">Покупка квартири в розстрочку</div>
+                    </div>
                     <div class="terOfpur__tabs_content terOfpur__tabs_content-1 js-terOfpur__tabs_content">
                         <div class="terOfpur__tabs_content-wrapper">
                             <ul>

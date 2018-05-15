@@ -1,0 +1,38 @@
+@media only screen and (max-width: 767px) {
+    .terOfpur__tab {
+        width: 100%;
+    }
+
+    .terOfpur__tab_1 {
+        &.terOfpur__tab-active {
+            border: none;
+        }
+    }
+
+    .terOfpur__tab_2 {
+        &.terOfpur__tab-active {
+            border: none;
+        }
+    }
+    .terOfpur__tab {
+        &.terOfpur__tab-active {
+            order: 2;
+            border-left: 1px solid #656668;
+            border-right: 1px solid #656668;
+        }
+    }
+    .terOfpur__tabs_content {
+        padding: 10px;
+    }
+    
+    .terOfpur__tabs_content-wrapper {
+        li {
+            &::before {
+                margin-right: 10px;
+            }
+        }
+    }
+    .terOfpur__tabs_btn {
+        width: 250px;
+    }
+}

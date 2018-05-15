@@ -40,10 +40,8 @@ a {
 }
 
 .clearfix{
-    &::after {
-        display: table;
-        clear: both;
-    }
+    display: table;
+    clear: both;
 }
 
 .page {

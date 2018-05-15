@@ -44,6 +44,11 @@
                                 <img src="img/documents/doc_5.jpg" alt="Document">
                             </a>
                         </li>
+                        <li class="documents__item">
+                            <a href="img/documents/doc_6.pdf" target="_blank">
+                                <img src="img/documents/doc_6.pdf" alt="Document">
+                            </a>
+                        </li>
                     </ul>
                     <!-- <div class="document__modal document__modal_hidden js-document__modal">
                         <img class="document__modal_image js-document__modal_image" src="" alt="Modal Image" />

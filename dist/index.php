@@ -57,7 +57,7 @@
         </div>
     </section>
 
-    <section class="building clearfix animate-me">
+    <section class="building animate-me">
         <canvas class="building__canvas"></canvas>
         <div class="building__inner wrapper">
             <div class="section__box section__box_buiding">
