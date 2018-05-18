@@ -1,27 +1,19 @@
 var documentsPage = (function() {
 
-    var modalOpen = false;
+    var documentsList = $('.js-documents__list');
 
-    var documentsList = document.querySelector('.js-documents__list');
-    var modal = document.querySelector('.js-document__modal');
-    var modalImage = document.querySelector('.js-document__modal_image');
-
-    function showDocumentModal(e) {
-        if(!modalOpen) {
-            modalOpen = !modalOpen;
-            modalImage.src = e.target.src;
-            modal.classList.remove('document__modal_hidden');
-            documentsList.removeEventListener('click', showDocumentModal);
-        }
-    };
-
-    function closeDocumentModal(e) {
-        modalOpen = !modalOpen;
-        modal.classList.add('document__modal_hidden');
-        documentsList.addEventListener('click', showDocumentModal);
-    };
-
-    modal.addEventListener('click', closeDocumentModal);
-    documentsList.addEventListener('click', showDocumentModal);
+    documentsList.slick({
+        slidesToShow: 5,
+        nextArrow: '<div class="documents-page-arrow documents-page-arrow_next"><div></div></div>',
+        prevArrow: '<div class="documents-page-arrow documents-page-arrow_prev"><div></div></div>',
+        responsive: [
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 2
+              }
+            }
+          ]
+    })
 
 })();

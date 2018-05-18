@@ -26,13 +26,23 @@
                             в собі продуману концепцію забудови й інфраструктури. Діяльність компанії «bud development» орієнтована на 
                             пошук та впровадження сучасних та ефективних рішень в сфері нерухомості.
                         </p>
-                        <a href="#" target="_blank" class="developer__description_link">Офіційний сайт компанії</a>
+                        <a href="http://www.bud.com.ua/" target="_blank" class="developer__description_link">Офіційний сайт компанії</a>
                     </div>
                     <div class="developer__description_logos">
                         <ul>
-                            <li class="developer__description_logo developer__description_logo-1"><img src="/img/developer/bud.png" alt="Bud"></li>
-                            <li class="developer__description_logo developer__description_logo-2"><img src="/img/developer/kc.png" alt="Kc"></li>
-                            <li class="developer__description_logo developer__description_logo-3"><img src="/img/developer/kievmiskbud.png" alt="kievmiskbud"></li>
+                            <li class="developer__description_logo developer__description_logo-1">
+                                <a href="http://www.bud.com.ua/" target="_blank">
+                                    <img src="/img/developer/bud.png" alt="Bud">
+                                </a>
+                            </li>
+                            <li class="developer__description_logo developer__description_logo-2">
+                                <img src="/img/developer/kc.png" alt="Kc">
+                            </li>
+                            <li class="developer__description_logo developer__description_logo-3">
+                                <a href="https://kmb.ua/ua/" target="_blank">
+                                    <img src="/img/developer/kievmiskbud.png" alt="kievmiskbud">
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -42,31 +52,39 @@
                 <div class="developer__gallery-container">
                     <ul class="developer__gallery">
                         <li class="developer__gallery_item">
-                            <a href="#"><img src="/img/developer/bristol.png" alt=""></a>
+                            <a href="http://www.france2.com.ua/" target="_blank">
+                                <img src="/img/developer/french-quarter.png" alt="French Quarter">
+                            </a>
                         </li>
                         <li class="developer__gallery_item">
-                            <a href="#"><img src="/img/developer/chikago.png" alt=""></a>
+                            <a href="http://www.zarichna.com">
+                                <img src="/img/developer/zarichna.png" alt="Zarichna">
+                            </a>
                         </li>
                         <li class="developer__gallery_item">
-                            <a href="#"><img src="/img/developer/einstein.png" alt=""></a>
+                            <a href="http://www.bud-slavutich.com" target="_blank">
+                                <img src="/img/developer/slavutich.png" alt="slavutich">
+                            </a>
                         </li>
                         <li class="developer__gallery_item">
-                            <a href="#"><img src="/img/developer/kandinsky.png" alt=""></a>
+                            <a href="http://bud-time.com/" target="_blank">
+                                <img src="/img/developer/bud-time.svg" alt="bud-time">
+                            </a>
                         </li>
                         <li class="developer__gallery_item">
-                            <a href="#"><img src="/img/developer/newyork.png" alt=""></a>
+                            <a href="http://bud-slavutich2.com/" target="_blank">
+                                <img src="/img/developer/slavutich2.png" alt="slavutich2">
+                            </a>
                         </li>
                         <li class="developer__gallery_item">
-                            <a href="#"><img src="/img/developer/resident.png" alt=""></a>
+                            <a href="http://www.victory5.com.ua/" target="_blank">
+                                <img src="/img/developer/victory5.png" alt="victory5">
+                            </a>
                         </li>
                         <li class="developer__gallery_item">
-                            <a href="#"><img src="/img/developer/kandinsky.png" alt=""></a>
-                        </li>
-                        <li class="developer__gallery_item">
-                            <a href="#"><img src="/img/developer/newyork.png" alt=""></a>
-                        </li>
-                        <li class="developer__gallery_item">
-                            <a href="#"><img src="/img/developer/resident.png" alt=""></a>
+                            <a href="http://www.vozduhoflotsky.com/" target="_blank">
+                                <img src="/img/developer/vozduhoflotsky.png" alt="vozduhoflotsky">
+                            </a>
                         </li>
                     </ul>
                     <div class="developer__slider-arrow developer__slider-arrow_left">
@@ -93,7 +111,7 @@
                 </div>
                 <div class="smartOrange">
                     <a href="http://smartorange.com.ua/" target="_blank">
-                        <img src="img/common/logo-smart-orange.png" alt="Smart Orange Logo">
+                        <div class="footer__smart-orange-logo"></div>
                     </a>
                 </div>
             </div>

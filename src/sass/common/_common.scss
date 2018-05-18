@@ -92,6 +92,13 @@ a {
         }
     }
 }
+.menu__smart-orange-logo,
+.footer__smart-orange-logo {
+    width: 47px;
+    height: 18px;
+    background: url('../img/common/common_spritesheet.png');
+    background-position: -64px -2px;
+}
 
 
 // Preloader start

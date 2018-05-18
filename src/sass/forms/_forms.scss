@@ -1,0 +1,23 @@
+// Callback form start
+
+.callback-form-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    background-color: rgba(21,20,18,0.9);
+}
+.callback-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.callback-form__message {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Cormorant', sans-serif;
+}
+// Callback form end

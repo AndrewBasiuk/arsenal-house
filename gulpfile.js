@@ -57,6 +57,7 @@ gulp.task('main-js', function() {
 // Documents start
 gulp.task('documents-js', function() {
 	return gulp.src([
+		'src/js/libs/slick.min.js',
 		'src/js/documents.js',
 		])
 	.pipe(concat('documents.min.js'))

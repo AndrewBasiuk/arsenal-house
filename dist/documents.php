@@ -44,16 +44,7 @@
                                 <img src="img/documents/doc_5.jpg" alt="Document">
                             </a>
                         </li>
-                        <li class="documents__item">
-                            <a href="img/documents/doc_6.pdf" target="_blank">
-                                <img src="img/documents/doc_6.pdf" alt="Document">
-                            </a>
-                        </li>
                     </ul>
-                    <!-- <div class="document__modal document__modal_hidden js-document__modal">
-                        <img class="document__modal_image js-document__modal_image" src="" alt="Modal Image" />
-                        <span class='document__modal_close-btn'>X</span>
-                    </div> -->
                     <p class="documents__paragraph">
                         Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. 
                         Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками 
@@ -70,12 +61,14 @@
                 </div>
                 <div class="smartOrange">
                     <a href="http://smartorange.com.ua/" target="_blank">
-                        <img src="img/common/logo-smart-orange.png" alt="Smart Orange Logo">
+                        <div class="footer__smart-orange-logo"></div>
                     </a>
                 </div>
             </div>
         </footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/common.min.js"></script>
+    <script src="js/documents.min.js"></script>
 </body>
 </html>

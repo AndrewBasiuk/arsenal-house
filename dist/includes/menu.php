@@ -37,57 +37,55 @@
             </div>
         </div>
         <div class="menu__middle">
-            <div class="menu__middle_left">
+            <div class="menu__lists-container">
+                <div>
+                    <h4 class="menu__list-heading">Про проект:</h4>
+                    <ul>
+                        <li class="menu__item menu__item_1">
+                            <a href="/">Головна</a>
+                        </li>
+                        <li class="menu__item menu__item_2">
+                            <a href="advantages.php">Переваги</a>
+                        </li>
+                        <li class="menu__item menu__item_3">
+                            <a href="infrastructure.php">Оточення</a>
+                        </li>
+                        <li class="menu__item menu__item_4">
+                            <a href="gallery.php">Галерея</a>
+                        </li>
+                        <li class="menu__item menu__item_5">
+                            <a href="news.php">Новини</a>
+                        </li>
+                        <li class="menu__item menu__item_6">
+                            <a href="choose-apartment.php">Обрати квартиру</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="menu__list-heading">Інформація:</h4>
+                    <ul>
+                        <li class="menu__item menu__item_7">
+                            <a href="construction.php">Хід будівнитва</a>
+                        </li>
+                        <li class="menu__item menu__item_8">
+                            <a href="contacts.php">Контакти</a>
+                        </li>
+                        <li class="menu__item menu__item_9">
+                            <a href="developer.php">Забудовник</a>
+                        </li>
+                        <li class="menu__item menu__item_10">
+                            <a href="terms-of-purchase.php">Умови придбання</a>
+                        </li>
+                        <li class="menu__item menu__item_11">
+                            <a href="documents.php">Документи</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
                 <a class="menu__middle_btn" href="#">
                     <div class="menu__icon menu__icon-view"></div>
                     <span>Вид з вікон</span> 
                 </a>
-            </div>
-            <div class="menu__middle_right">
-                <a class="menu__middle_btn" href="documents.php">
-                    <div class="menu__icon menu__icon-documents"></div>
-                    <span>Документи</span> 
-                </a>
-            </div>
-            <div class="menu__middle_center">
-                <ul>
-                    <li class="menu__item menu__item_1">
-                        <a href="/">Головна</a>
-                    </li>
-                    <li class="menu__item menu__item_2">
-                        <a href="advantages.php">Переваги</a>
-                    </li>
-                    <li class="menu__item menu__item_3">
-                        <a href="contacts.php">Розташування</a>
-                    </li>
-                    <li class="menu__item menu__item_4">
-                        <a href="choose-apartment.php">Обрати квартиру</a>
-                    </li>
-                    <li class="menu__item menu__item_5">
-                        <a href="construction.php">Хід будівнитва</a>
-                    </li>
-                    <li class="menu__item menu__item_6">
-                        <a href="gallery.php">Галерея</a>
-                    </li>
-                    <li class="menu__item menu__item_7">
-                        <a href="developer.php">Забудовник</a>
-                    </li>
-                    <li class="menu__item menu__item_8">
-                        <a href="news.php">Новини</a>
-                    </li>
-                    <li class="menu__item menu__item_9">
-                        <a href="infrastructure.php">Інфраструктура</a>
-                    </li>
-                    <li class="menu__item menu__item_10">
-                        <a href="terms-of-purchase.php">Умови придбання</a>
-                    </li>
-                </ul>
-                <!-- <div class="menu__callback-btn-wrapper">
-                    <a href="#" class="menu__callback-btn">
-                        <span>Зворотній дзвінок</span>
-                    </a>
-                </div> -->
-            </div>
         </div>
         <div class="menu__bottom">
             <div class="copyright">
@@ -95,7 +93,7 @@
             </div>
             <div class="menu__smartorange">
                 <a href="">
-                    <img src="../img/common/logo-smart-orange.png" alt="Smart Orange Logo">
+                    <div class="menu__smart-orange-logo"></div>
                 </a>
             </div>
         </div>

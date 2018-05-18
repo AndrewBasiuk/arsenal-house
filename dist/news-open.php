@@ -91,7 +91,7 @@
                 </div>
                 <div class="smartOrange">
                     <a href="http://smartorange.com.ua/" target="_blank">
-                        <img src="img/common/logo-smart-orange.png" alt="Smart Orange Logo">
+                        <div class="footer__smart-orange-logo"></div>
                     </a>
                 </div>
             </div>

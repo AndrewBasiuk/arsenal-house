@@ -27,8 +27,8 @@
                         </a>
                     </li>
                     <li class="nav__item nav__item_desk"><a href="/">Головна</a></li>
-                    <li class="nav__item nav__item_desk"><a href="#">Про комплекс</a></li>
-                    <li class="nav__item nav__item_desk"><a href="choose-apartment.php">Обрати кваритру</a></li>
+                    <li class="nav__item nav__item_desk"><a href="advantages.php">Переваги</a></li>
+                    <li class="nav__item nav__item_desk"><a href="construction.php">Хід будівнитва</a></li>
                 </ul>
                 <div class="nav__item nav__logo-container">
                     <a href="/">
@@ -63,8 +63,8 @@
                         <a href="#">Зворотній дзвінок</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" target="_blank">
-                            <img src="/img/common/bud_logo.png" alt="Bud Logo">
+                        <a href="http://www.bud.com.ua/" target="_blank">
+                            <div class="nav__bud-logo"></div>
                         </a>
                     </li>
                 </ul>

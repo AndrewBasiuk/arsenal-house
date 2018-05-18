@@ -30,24 +30,6 @@
     visibility: hidden;
 }
 
-.menu__item {
-    transition-property: opacity, transform;
-}
-.menu__item_1 {transition-delay: 1s}
-.menu__item_2 {transition-delay: 1.2s}
-.menu__item_3 {transition-delay: 1.4s}
-.menu__item_4 {transition-delay: 1.6s}
-.menu__item_5 {transition-delay: 1.8s}
-.menu__item_6 {transition-delay: 2s}
-.menu__item_7 {transition-delay: 2.2s}
-.menu__item_8 {transition-delay: 2.4s}
-.menu__item_9 {transition-delay: 2.6s}
-.menu__item_10 {transition-delay: 2.8s}
-.menu__item_11 {transition-delay: 3s}
-.menu__item_12 {transition-delay: 3.2s}
-.menu__item_13 {transition-delay: 3.4s}
-.menu__item_14 {transition-delay: 3.6s}
-
 .menu__callback-btn-wrapper {
     transition: all $transitionTime2 2.6s;
 }
@@ -67,6 +49,14 @@
     .menu__top {
         transform: translateY(-50px);
         transition: all 0.1s;
+    }
+    .menu__list-heading {
+        opacity: 0;
+        transition: all 0.1s;
+        &::after {
+            width: 0;
+            transition: all 0.1s;
+        }
     }
 
     .menu__item {
@@ -91,7 +81,7 @@
         transform: translateY(50px);
         transition: all 0.1s;
     }
-    .menu__callback-btn-wrapper {
+    .menu__middle_btn {
         opacity: 0;
         transform: translateY(-10px);
         transition: all 0.1s;
@@ -212,26 +202,9 @@
 }
 
 .menu__middle {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
     flex: 1;
 }
-.menu__middle_left {
-    order: 1
-}
-.menu__middle_center {
-    order: 2;
-}
-.menu__middle_right {
-    order: 3;
-}
-.menu__middle_btn {
-    @include btn_3();
-    width: 240px;
-    line-height: 48px;
-}
+
 .menu__icon-view {
     display: inline-block;
     vertical-align: middle;
@@ -240,39 +213,64 @@
     height: 31px;
     background-position: -41px 0;
 }
-.menu__icon-documents {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 15px;
-    width: 34px;
-    height: 26px;
-    background-position: 0 -2px;
+.menu__lists-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 10% auto 0;
 }
-.menu__middle_center {
-    li {
-        text-align: center;
-        font-size: 1.5rem;
-        font-weight: 300;
-        line-height: 48px;
-        a {
-            transition: color $transitionTime1;
-            &:hover {
-                color: $main-color;
-            }
+.menu__list-heading {
+    color: $main-color;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    transition-property: opacity, transform;
+    transition-delay: 1s;
+    transition-duration: 1s;
+    &::after {
+        content: '';
+        display: block;
+        margin-top: 10px;
+        height: 1px;
+        width: 100%;
+        background-color: $secondary-color;
+        transition: width 2s 1s;
+    }
+}
+.menu__item {
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 48px;
+    padding-left: 20px;
+    transition-property: opacity, transform;
+    a {
+        transition: color $transitionTime1;
+        &:hover {
+            color: $main-color;
         }
     }
 }
 
-.menu__callback-btn {
-    display: block;
-    text-align: center;
-    border: 1px solid $secondary-color;
+.menu__item_1 {transition-delay: 1.1s}
+.menu__item_2 {transition-delay: 1.2s}
+.menu__item_3 {transition-delay: 1.4s}
+.menu__item_4 {transition-delay: 1.6s}
+.menu__item_5 {transition-delay: 1.8s}
+.menu__item_6 {transition-delay: 2s}
+.menu__item_7 {transition-delay: 2.2s}
+.menu__item_8 {transition-delay: 2.4s}
+.menu__item_9 {transition-delay: 2.6s}
+.menu__item_10 {transition-delay: 2.8s}
+.menu__item_11 {transition-delay: 3s}
+.menu__item_12 {transition-delay: 3.2s}
+.menu__item_13 {transition-delay: 3.4s}
+.menu__item_14 {transition-delay: 3.6s}
+
+.menu__middle_btn {
+    @include btn_3();
     width: 240px;
     line-height: 48px;
-    color: $main-color;
-    font-size: 0.875rem;
-    margin-top: 60px;
-    @include btn_2(240px);
+    margin:20px auto;
+    transition: opacity 1s 3.2s;
 }
 
 .menu__bottom {

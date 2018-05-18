@@ -14,16 +14,51 @@
 .advantages__right {
     width: 49%;
 }
+
 .advantages__left {
     @include backgroundImage();
     background-image: url('../img/advantages/advantages_img.jpg');
+    transition: all $transitionTime2;
 }
+.animate-me {
+    .advantages__left {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+}
+
 .advantages__text {
     font-size: 1.125rem;
     line-height: 30px;
     letter-spacing: 0.9px;
     color: #000;
 }
+
+.advantages__paragraph {
+    transition: opacity $transitionTime2;
+}
+.animate-me {
+    .advantages__paragraph {
+        opacity: 0;
+    }
+}
+
+.advantages__item:nth-child(1) {transition: all $transitionTime2 0.1s;}
+.advantages__item:nth-child(2) {transition: all $transitionTime2 0.3s;}
+.advantages__item:nth-child(3) {transition: all $transitionTime2 0.5s;}
+.advantages__item:nth-child(4) {transition: all $transitionTime2 0.7s;}
+.advantages__item:nth-child(5) {transition: all $transitionTime2 0.9s;}
+.advantages__item:nth-child(6) {transition: all $transitionTime2 1.1s;}
+.advantages__item:nth-child(7) {transition: all $transitionTime2 1.3s;}
+.advantages__item:nth-child(8) {transition: all $transitionTime2 1.5s;}
+
+.animate-me {
+    .advantages__item {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+}
+
 .advantages__color {
     color: $main-color;
 }
@@ -78,6 +113,7 @@
     height: 51px;
     background-position: -219px -2px;
 }
+
 .advantages__btn {
     margin: 60px auto;
     text-align: center;
@@ -86,4 +122,10 @@
     display: block;
     background-color: $secondary-color;
     @include btn_2(260px, rgba(183, 157, 124, 0.5));
+    transition: opacity $transitionTime2 1.6s;
+}
+.animate-me {
+    .advantages__btn {
+        opacity: 0;
+    }
 }

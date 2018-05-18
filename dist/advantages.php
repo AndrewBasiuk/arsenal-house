@@ -11,7 +11,7 @@
     <?php include_once('includes/preloader.php'); ?>
     <?php include_once('includes/menu.php'); ?>
     <?php include_once('includes/header.php'); ?>
-    <div class="page">
+    <div class="page animate-me">
         <div class="wrapper">
             <div class="page-heading advantages__heading animate-me">
                 <h1>Переваги</h1>
@@ -20,7 +20,7 @@
                 <div class="advantages__left advantages__image">
                 </div>
                 <div class="advantages__right">
-                    <p class="advantages__text advantages__color">
+                    <p class="advantages__text advantages__paragraph advantages__color">
                         Arsenal House — це яскравий фасад будинку, функціональні планування квартир, гармонійне поєднання 
                         природи та сучасної архітектури:
                     </p>
@@ -78,7 +78,7 @@
                     </ul>
                 </div>
             </div>
-            <a href="#" class="advantages__btn">
+            <a href="choose-apartment.php" class="advantages__btn">
                 Обрати квартиру
             </a>
         </div>
@@ -89,7 +89,7 @@
                 </div>
                 <div class="smartOrange">
                     <a href="http://smartorange.com.ua/" target="_blank">
-                        <img src="img/common/logo-smart-orange.png" alt="Smart Orange Logo">
+                        <div class="footer__smart-orange-logo"></div>
                     </a>
                 </div>
             </div>

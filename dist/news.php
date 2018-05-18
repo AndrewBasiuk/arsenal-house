@@ -31,7 +31,7 @@
                                 Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. 
                                 Lorem Ipsum є, фактично, стандартною "рибою"...</p>
                             <div class="news_more-btn">
-                                <a href="#">Детальніше</a>
+                                <a href="news-open.php">Детальніше</a>
                             </div>
                         </div>
                     </div>
@@ -47,7 +47,7 @@
                                 Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. 
                                 Lorem Ipsum є, фактично, стандартною "рибою"...</p>
                             <div class="news_more-btn">
-                                <a href="#">Детальніше</a>
+                                <a href="news-open.php">Детальніше</a>
                             </div>
                         </div>
                     </div>
@@ -63,7 +63,7 @@
                                 Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. 
                                 Lorem Ipsum є, фактично, стандартною "рибою"...</p>
                             <div class="news_more-btn">
-                                <a href="#">Детальніше</a>
+                                <a href="news-open.php">Детальніше</a>
                             </div>
                         </div>
                     </div>
@@ -79,7 +79,7 @@
                                 Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. 
                                 Lorem Ipsum є, фактично, стандартною "рибою"...</p>
                             <div class="news_more-btn">
-                                <a href="#">Детальніше</a>
+                                <a href="news-open.php">Детальніше</a>
                             </div>
                         </div>
                     </div>
@@ -95,7 +95,7 @@
                                 Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. 
                                 Lorem Ipsum є, фактично, стандартною "рибою"...</p>
                             <div class="news_more-btn">
-                                <a href="#">Детальніше</a>
+                                <a href="news-open.php">Детальніше</a>
                             </div>
                         </div>
                     </div>
@@ -111,7 +111,7 @@
                                 Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. 
                                 Lorem Ipsum є, фактично, стандартною "рибою"...</p>
                             <div class="news_more-btn">
-                                <a href="#">Детальніше</a>
+                                <a href="news-open.php">Детальніше</a>
                             </div>
                         </div>
                     </div>
@@ -127,7 +127,7 @@
                                 Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. 
                                 Lorem Ipsum є, фактично, стандартною "рибою"...</p>
                             <div class="news_more-btn">
-                                <a href="#">Детальніше</a>
+                                <a href="news-open.php">Детальніше</a>
                             </div>
                         </div>
                     </div>
@@ -143,7 +143,7 @@
                                 Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. 
                                 Lorem Ipsum є, фактично, стандартною "рибою"...</p>
                             <div class="news_more-btn">
-                                <a href="#">Детальніше</a>
+                                <a href="news-open.php">Детальніше</a>
                             </div>
                         </div>
                     </div>
@@ -159,7 +159,7 @@
                                 Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. 
                                 Lorem Ipsum є, фактично, стандартною "рибою"...</p>
                             <div class="news_more-btn">
-                                <a href="#">Детальніше</a>
+                                <a href="news-open.php">Детальніше</a>
                             </div>
                         </div>
                     </div>
@@ -175,7 +175,7 @@
                                 Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. 
                                 Lorem Ipsum є, фактично, стандартною "рибою"...</p>
                             <div class="news_more-btn">
-                                <a href="#">Детальніше</a>
+                                <a href="news-open.php">Детальніше</a>
                             </div>
                         </div>
                     </div>
@@ -215,7 +215,7 @@
                 </div>
                 <div class="smartOrange">
                     <a href="http://smartorange.com.ua/" target="_blank">
-                        <img src="img/common/logo-smart-orange.png" alt="Smart Orange Logo">
+                        <div class="footer__smart-orange-logo"></div>
                     </a>
                 </div>
             </div>

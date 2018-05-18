@@ -11,7 +11,7 @@
     <?php include_once('includes/preloader.php'); ?>
     <?php include_once('includes/menu.php'); ?>
     <?php include_once('includes/header.php'); ?>
-    <div class="page">
+    <div class="page animate-me">
         <div class="contacts-page__heading-wrapper">
             <div class="page-heading contacts-page__heading animate-me">
                 <h1>Contacts</h1>
@@ -65,7 +65,7 @@
                 </div>
                 <div class="smartOrange">
                     <a href="http://smartorange.com.ua/" target="_blank">
-                        <img src="img/common/logo-smart-orange.png" alt="Smart Orange Logo">
+                        <div class="footer__smart-orange-logo"></div>
                     </a>
                 </div>
             </div>

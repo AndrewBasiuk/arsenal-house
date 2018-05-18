@@ -48,7 +48,7 @@
             <p>Будинок для шанувальників розкішного життя</p>
         </div>
         <div class="hero__choose-apartment-btn">
-            <a href="#">Обрати апартаменти</a>
+            <a href="choose-apartment.php">Обрати апартаменти</a>
         </div>
         <div class="hero__next-view">
             <div class="next-view next-view_brown">
@@ -74,7 +74,7 @@
                             </div>
                             <div class="section__box-btn-wrapper">
                                 <div class="section__box-btn">
-                                    <a href="#">Перейти до Переваг</a>
+                                    <a href="advantages.php">Перейти до Переваг</a>
                                 </div>
                             </div>
                         </div>
@@ -84,7 +84,44 @@
 
             <div class="building__next-view">
                 <div class="next-view next-view_black">
-                    <a href="#" data-nextView=".apartments">Наступна <span class="next-view__icon next-view__icon_black"></span>сторiнка</a>
+                    <a href="#" data-nextView=".location">Наступна <span class="next-view__icon next-view__icon_black"></span>сторiнка</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="location animate-me">
+        <div class="ba-slider">
+            <img src="img/main/location_paint.jpg" alt="Slider paint image">
+            <div class="resize">
+                <img src="img/main/location.jpg" alt="Slider image">
+            </div>
+            <span class="handle"></span>
+        </div>
+        <div class="location__inner wrapper">
+            <div class="section__box section__box_location">
+                <div class="section__box_outer">
+                    <div class="section__box_inner">
+                        <div class="section__box-text-container">
+                            <div>
+                                <h4 class="section__box-heading">Locaton</h4>
+                            </div>
+                            <div class="section__box-paragraphs">
+                                <p class="section__box-paragraph section__box-paragraph_1">Локація Arsenal House поєднує дві сторони життя столиці. З одної сторони – історичне минуле України, що знаходить своє відображення в культурних пам’ятках,</p>
+                                <p class="section__box-paragraph section__box-paragraph_2">музеях та захоплюючих краєвидах зі схилів Дніпра. А з іншого боку, на Західній стороні вулиці, ритмічно та нестомно вирує серце ділового Печерська та атмосфера мегаполісу.</p>
+                            </div>
+                            <div class="section__box-btn-wrapper">
+                                <div class="section__box-btn">
+                                    <a href="contacts.php">Подивитись на карті</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="location__next-view">
+                <div class="next-view next-view_black">
+                    <a href="#" data-nextView=".apartments" >Наступна <span class="next-view__icon next-view__icon_black"></span>сторiнка</a>
                 </div>
             </div>
         </div>
@@ -106,7 +143,7 @@
                             </div>
                             <div class="section__box-btn-wrapper">
                                 <div class="section__box-btn">
-                                    <a href="#">Обрати квартиру</a>
+                                    <a href="choose-apartment.php">Обрати квартиру</a>
                                 </div>
                             </div>
                         </div>
@@ -116,45 +153,6 @@
             <div class="building__next-view">
                 <div class="next-view next-view_brown">
                     <a href="#" data-nextView=".location">Наступна <span class="next-view__icon next-view__icon_brown"></span>сторiнка</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="location animate-me">
-        <div class="ba-slider">
-            <img src="img/main/location_paint.jpg" alt="Slider paint image">
-            <!-- <div class="location__image location__image-left"></div> -->
-            <div class="resize">
-                <!-- <div class="location__image location__image-right"></div> -->
-                <img src="img/main/location.jpg" alt="Slider image">
-            </div>
-            <span class="handle"></span>
-        </div>
-        <div class="location__inner wrapper">
-            <div class="section__box section__box_location">
-                <div class="section__box_outer">
-                    <div class="section__box_inner">
-                        <div class="section__box-text-container">
-                            <div>
-                                <h4 class="section__box-heading">Locaton</h4>
-                            </div>
-                            <div class="section__box-paragraphs">
-                                <p class="section__box-paragraph section__box-paragraph_1">Локація Arsenal House поєднує дві сторони життя столиці. З одної сторони – історичне минуле України, що знаходить своє відображення в культурних пам’ятках,</p>
-                                <p class="section__box-paragraph section__box-paragraph_2">музеях та захоплюючих краєвидах зі схилів Дніпра. А з іншого боку, на Західній стороні вулиці, ритмічно та нестомно вирує серце ділового Печерська та атмосфера мегаполісу.</p>
-                            </div>
-                            <div class="section__box-btn-wrapper">
-                                <div class="section__box-btn">
-                                    <a href="#">Подивитись на карті</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="location__next-view">
-                <div class="next-view next-view_black">
-                    <a href="#" data-nextView=".quote_1" >Наступна <span class="next-view__icon next-view__icon_black"></span>сторiнка</a>
                 </div>
             </div>
         </div>
@@ -284,9 +282,9 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
+        <a href="news.php" class="news__main_all-news-btn">Перейти до всіх новин</a>
+
     </section>
     <section class="contacts">
         <div class="contacts__wrapper">
@@ -301,12 +299,12 @@
                             <a href="#">Arsenalhouse@com.ua</a>
                         </div>
                     </li>
-                    <li>
+                    <!-- <li>
                         <div class="contacts__info_item-container">
                             <span class="contacts__icon contacts__icon_webcam"></span>
                             <a href="webcam.php">Веб -камера</a>
                         </div>
-                    </li>
+                    </li> -->
                     <li>
                         <div class="contacts__info_item-container">
                             <span class="contacts__icon contacts__icon_address"></span>
@@ -361,7 +359,9 @@
                 &#169; Усі права захищено. Арсенал
             </div>
             <div class="amrtOrange">
-                <a href="http://smartorange.com.ua/" target="_blank"><img src="img/common/logo-smart-orange.png" alt="Smart Orange Logo"></a>
+                <a href="http://smartorange.com.ua/" target="_blank">
+                    <div class="footer__smart-orange-logo"></div>
+                </a>
             </div>
         </div>
     </footer>
