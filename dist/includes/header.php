@@ -55,12 +55,12 @@
                         </div>
                     </li>
                     <li class="nav__item nav__callback-btn_mobile">
-                        <a href="#">
+                        <a href="#" class="js-show-callback-form">
                             <div class="nav__phone_icon"></div>
                         </a>
                     </li>
                     <li class="nav__item nav__callback-btn">
-                        <a href="#">Зворотній дзвінок</a>
+                        <a href="#" class="js-show-callback-form">Зворотній дзвінок</a>
                     </li>
                     <li class="nav__item">
                         <a href="http://www.bud.com.ua/" target="_blank">

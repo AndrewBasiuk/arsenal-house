@@ -1,0 +1,10 @@
+@media only screen and (max-width: 767px) {
+    .not-found__text {
+        flex-direction: column;
+        margin: 70px auto 0;
+        float: none;
+    }
+    .not-found__back-btn {
+        margin: 30px auto 0;
+    }
+}

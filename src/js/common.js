@@ -1,6 +1,7 @@
 var arsenalhouseAppState = {
     menuOpen: false,
-    scrollHidden: false
+    scrollHidden: false,
+    callbackOpen: false
 };
 //  =====================================================================================================================
 //  Language open/close start
@@ -279,4 +280,52 @@ var animateLogoCtrl = (function() {
   }
 
   // Preloader logic and animation end
+  //  =====================================================================================================================
+
+  //  =====================================================================================================================
+  //  Callback form start
+
+  var callbackForm = (function() {
+
+    var showCallbackFormBtn = document.querySelectorAll('.js-show-callback-form');
+    var hideCallbackFormBtn = document.querySelector('.js-hide-callback-form')
+    var callbackFormModal = document.querySelector('.callback-form-modal');
+
+    // Show form event
+    showCallbackFormBtn.forEach(function(btn) {
+
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+  
+        // Change app state
+        arsenalhouseAppState.callbackOpen = true;
+        // Check if menu open and scroll hidden
+        if(!arsenalhouseAppState.menuOpen) {
+          hideScrollBar();
+        }
+  
+        callbackFormModal.classList.add('show-callback-modal');
+  
+      });
+    })
+
+
+    // Hide form event
+    hideCallbackFormBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      // Change app sate
+      arsenalhouseAppState.callbackOpen = false;
+      // If menu closed - show scroll back
+      if(!arsenalhouseAppState.menuOpen) {
+        showScrollBar();
+      }
+
+      callbackFormModal.classList.remove('show-callback-modal');
+
+    })
+
+
+  })();
+
+  //  Callback form end
   //  =====================================================================================================================

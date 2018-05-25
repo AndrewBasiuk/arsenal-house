@@ -138,6 +138,8 @@
     color: $main-color;
     font-variant: small-caps;
     letter-spacing: 1.2px;
+    max-height: 150px;
+    overflow: hidden;
     &:after {
         content: '';
         display: block;
@@ -148,6 +150,10 @@
         background-repeat: no-repeat;
         background-position: -239px -2px;
     }
+}
+.news__item_paragraph {
+    max-height: 100px;
+    overflow: hidden;
 }
 .news_more-btn {
     @include btn_1(225px);
