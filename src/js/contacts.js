@@ -1,7 +1,10 @@
 var contactsMap = (function() {
 
     var xmlhttp = new XMLHttpRequest();
-    var url = "/js/map.style.json";
+
+    //var coordiantes = document.querySelector('.js-coordinates').innerHTML.trim().split('||');
+
+    var url = "/wp-content/themes/arsenal/assets/js/map.style.json";
     var globalStyles;
 
     xmlhttp.onreadystatechange = function() {
@@ -33,18 +36,29 @@ var contactsMap = (function() {
 
         var icons = {
             sales_dep: {
-                icon: '../img/contacts/sales_dep.png'
+                icon: '/wp-content/themes/arsenal/assets/img/contacts/sales_dep.png'
             },
             main: {
-                icon: '../img/contacts/main.png'
+                icon: '/wp-content/themes/arsenal/assets/img/contacts/main.png'
             }
         };
+
         //lat: 50.414614, lng: 30.526581
-        var markers = [
-            {lat: 50.414614, lng: 30.526581, type: 'sales_dep', message:'<span class="contacts__infowindow">вул. Арсенальна 45</span>'},
-            {lat: 50.4362216, lng: 30.544073, type: 'main', message:'<span class="contacts__infowindow">вул. Арсенальна 45</span>'}
-        ];
-    
+
+        var markers = markerData.reduce(function(arr, marker) {
+
+            arr.push({
+                lat: parseFloat(marker.lat),
+                lng: parseFloat(marker.lng),
+                type: marker.type,
+                message: '<span class="contacts__infowindow">' + marker.street + '</span>'
+            });
+
+            return arr;
+
+        }, []);
+
+
         var map = new google.maps.Map(mapContainer, {
             zoom: zoom,
             center: mapCenter,
